@@ -11,10 +11,6 @@ cache/*
 !cache/.ignore
 
 # css/js generated files
-web/css
-!web/css/.ignore
-web/js/min
-!web/js/min/.ignore
 web/js/**/*.txt
 
 web/manifest.json
