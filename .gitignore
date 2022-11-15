@@ -15,9 +15,8 @@ web/css
 !web/css/.ignore
 web/js/min
 !web/js/min/.ignore
+web/js/**/*.txt
 
-web/**/*.html
-!web/mail/**/*.html
 web/manifest.json
 
 node_modules
