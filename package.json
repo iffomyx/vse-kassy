@@ -1,0 +1,55 @@
+{
+  "name": "vse-kassy",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:start": "gulp",
+    "build": "gulp build",
+    "images": "gulp images"
+  },
+  "repository": {
+    "private": true
+  },
+  "browserslist": [
+    "last 10 versions",
+    "not dead",
+    "Chrome >= 45",
+    "Firefox >= 38",
+    "not Blackberry < 10",
+    "not IE <= 10",
+    "EDGE >= 12",
+    "not OperaMobile <= 12.5",
+    "Safari > 6",
+    "Opera > 12.5",
+    "IOS > 6",
+    "not Android < 4.4"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
+    "css-loader": "^6.6.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.6",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-sort-media-queries": "^4.2.1",
+    "webpack": "^5.69.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "photoswipe": "^5.3.3"
+  }
+}

@@ -1,0 +1,9 @@
+@import "../main/mixins/fonts";
+
+$font-display: swap !default;
+
+@include add_font('Gilroy', 400, normal, "gilroy/Gilroy-Regular", $font-display);
+@include add_font('Gilroy', 500, normal, "gilroy/Gilroy-Medium", $font-display);
+@include add_font('Gilroy', 700, normal, "gilroy/Gilroy-Bold", $font-display);
+
+@include add_font('Bebas Neue', 700, normal, "bebas/BebasNeue-Bold", $font-display);

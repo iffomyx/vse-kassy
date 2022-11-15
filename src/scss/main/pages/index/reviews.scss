@@ -1,0 +1,41 @@
+.k-reviews-section {
+  overflow: hidden;
+}
+
+.k-reviews-section__rating {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.k-reviews-section__form-title {
+  margin-top: 60px;
+}
+
+.k-reviews-section__form {
+  max-width: 560px;
+
+  & .k-section__btn {
+    width: 100%;
+  }
+
+  & .k-check__text {
+    font-size: 12px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-reviews-section__form {
+    & .k-section__btn {
+      max-width: 220px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-reviews-section {
+    & .swiper-slide {
+      height: auto;
+    }
+  }
+}

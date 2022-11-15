@@ -1,0 +1,59 @@
+.k-map-section {
+  position: relative;
+
+  & .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.k-map-section__map {
+  width: 100%;
+  height: 820px;
+}
+
+.k-map-section__info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  z-index: 1;
+  padding: 64px 0;
+
+  & .k-heading-font {
+    font-size: 1.5rem;
+  }
+
+  & .k-text {
+    font-size: 18px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .k-map-section__info {
+    left: calc(50% - 195px);
+    width: 390px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-map-section__info {
+    top: calc(50% - 205px);
+    left: calc(50% - 470px);
+    height: 410px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-map-section__info {
+    left: calc(50% - 560px);
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-map-section__info {
+    left: calc(50% - 865px);
+  }
+}

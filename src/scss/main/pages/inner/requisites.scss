@@ -1,0 +1,13 @@
+.k-requisites-section {
+  background-image: img-url("inner/requisites/bg_mobile.jpg");
+
+  & .k-section__bg-content {
+    max-width: 490px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-requisites-section {
+    background-image: img-url("inner/requisites/bg.jpg");
+  }
+}

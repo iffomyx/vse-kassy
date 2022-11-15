@@ -1,0 +1,37 @@
+.k-choice-section {
+  background-image: img-url("index/choice/bg_mobile.jpg");
+
+  & .k-section__bg-content {
+    max-width: 850px;
+  }
+
+  & .k-section__btn {
+    width: 100%;
+  }
+
+  & .k-check__text {
+    font-size: 12px;
+  }
+}
+
+.k-choice-section--no-bg {
+  background: none !important;
+}
+
+@include media-breakpoint-up(lg) {
+  .k-choice-section {
+    & .k-section__bg-content {
+      padding: 60px 80px !important;
+    }
+
+    & .k-section__btn {
+      max-width: 240px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-choice-section {
+    background-image: img-url("index/choice/bg.jpg");
+  }
+}

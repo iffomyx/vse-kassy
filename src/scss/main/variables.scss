@@ -1,0 +1,47 @@
+$theme-colors: (
+  "primary": #f7ad5c,
+  "black": #000,
+  "white": #fff,
+  "light": #c9d3d7,
+  "gray": #dedede,
+);
+
+$base-box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
+
+$grid-gutter-width: 24px;
+$grid-breakpoints: (
+  xxs: 0,
+  xs:  375px,
+  sm:  576px,
+  md:  768px,
+  lg:  1024px,
+  xl:  1200px,
+  xxl: 1920px
+);
+
+$container-max-widths: (
+  xs:  420px,
+  sm:  576px,
+  md:  768px,
+  lg:  960px,
+  xl:  1140px,
+  xxl: 1750px
+);
+
+
+$font-family-base: "Gilroy";
+
+$headings-margin-bottom: 0;
+$headings-font-family: "Bebas Neue", sans-serif;
+$headings-font-weight: 700;
+$paragraph-margin-bottom: 0;
+
+$btn-font-weight: 700;
+
+$input-font-family: $font-family-base;
+$input-padding-x: 1.5rem;
+$input-padding-y: 1.15rem;
+$input-font-size: 14px;
+$input-bg: transparent;
+$input-border-color: #dedede;
+$input-border-width: 2px;

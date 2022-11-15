@@ -1,0 +1,29 @@
+@include media-breakpoint-up(md) {
+  .k-solutions-section {
+    & .k-solution {
+      min-height: 210px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .k-solutions-section {
+    & .k-solution {
+      min-height: 172px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-solutions-section--restaurant {
+    & .k-section__title {
+      max-width: 660px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-solutions-section__form {
+    max-width: 1400px;
+  }
+}

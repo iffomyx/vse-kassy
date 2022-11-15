@@ -1,0 +1,133 @@
+.k-logo-block {
+  & a {
+    text-decoration: none;
+  }
+}
+
+.k-logo-block--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  background-color: $white;
+  box-shadow: $base-box-shadow;
+}
+
+.k-logo-block--footer {
+  background-color: #F5F5F5;
+}
+
+.k-logo-block__logo {
+  width: 116px;
+  height: 36px;
+}
+
+.k-logo-block__cart-num {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  height: 10px;
+  padding: 0 4px;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.k-logo-block__btn-circle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.icon-message {
+    background-image: img-url("icons/message.svg");
+  }
+
+  &.icon-search {
+    background-image: img-url("icons/search.svg");
+  }
+
+  &.icon-cart {
+    background-image: img-url("icons/shopping-cart.svg");
+  }
+
+  &.icon-menu {
+    background-image: img-url("icons/menu.svg");
+  }
+}
+
+.k-logo-block__btn-circle--menu {
+  width: 36px;
+  height: 36px;
+  background-size: 24px;
+  border-radius: 50%;
+}
+
+@include media-breakpoint-up(xs) {
+  .k-logo-block__btn-call {
+    font-size: 12px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .k-logo-block__logo {
+    width: 140px;
+    height: 42px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-logo-block--fixed {
+    & .k-site-menu {
+      padding: 1rem 0 !important;
+    }
+  }
+
+  .k-logo-block__info,
+  .k-logo-block__text {
+    font-size: 0.825rem;
+    line-height: 1.25;
+  }
+
+  .k-logo-block__info {
+    margin-right: 20px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-logo-block__logo {
+    width: 190px;
+    height: 58px;
+  }
+
+  .k-logo-block__text {
+    max-width: 250px;
+    font-size: 0.75rem;
+    line-height: 1.15;
+  }
+
+  .k-logo-block__btn-call {
+    font-size: 0.785rem;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-logo-block--fixed {
+    & .k-site-menu {
+    }
+  }
+
+  .k-logo-block__info {
+    margin-right: 100px;
+    font-size: $font-size-sm;
+  }
+
+  .k-logo-block__cart-num {
+    top: -20px;
+    height: 16px;
+    width: 24px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

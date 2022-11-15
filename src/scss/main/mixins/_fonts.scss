@@ -1,0 +1,48 @@
+@function font-url($font-uri) {
+  @return url("../fonts/" + $font-uri);
+}
+
+@function get-local-name($localNameList) {
+  $local-name-string: "";
+
+  @each $localName in $localNameList {
+    @if $local-name-string == "" {
+      $local-name-string: local($localName);
+    }
+
+    @else {
+      $local-name-string: $local-name-string + ", " + local($localName);
+    }
+  }
+
+  @return unquote($local-name-string);
+}
+
+@mixin add_font($fontName, $fontWeight, $fontStyle, $pathFile, $display: null, $subset: null, $localNameList: ()) {
+  @font-face {
+    font-weight: $fontWeight;
+    font-family: $fontName;
+    font-style: $fontStyle;
+
+    @if length($localNameList) != 0 {
+      src:
+        get-local-name($localNameList),
+        font-url("#{$pathFile}.woff2") format("woff2"),
+        font-url("#{$pathFile}.woff") format("woff");
+    }
+
+    @else {
+      src:
+        font-url("#{$pathFile}.woff2") format("woff2"),
+        font-url("#{$pathFile}.woff") format("woff");
+    }
+
+    @if ($display) {
+      font-display: $display;
+    }
+
+    @if ($subset) {
+      unicode-range: $subset;
+    }
+  }
+}

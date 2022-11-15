@@ -1,0 +1,12 @@
+.k-table {
+  & table {
+    border-collapse: collapse;
+    border-color: #dedede;
+  }
+}
+
+.k-table--registry {
+  & table tbody td {
+    padding: 10px 38px;
+  }
+}

@@ -1,0 +1,118 @@
+@import "./../vendor/bootstrap/functions";
+
+@import "./../main/variables";
+@import "./../main/mixins/images";
+
+@import "./../vendor/bootstrap/variables";
+@import "./../vendor/bootstrap/mixins";
+@import "./../vendor/bootstrap/utilities";
+
+@import "./../vendor/bootstrap/reboot";
+@import "./../vendor/bootstrap/type";
+@import "./../vendor/bootstrap/grid";
+@import "./../vendor/bootstrap/buttons";
+@import "./../vendor/bootstrap/modal";
+@import "./../vendor/bootstrap/close";
+@import "./../vendor/bootstrap/images";
+@import "./../vendor/bootstrap/forms";
+@import "./../vendor/bootstrap/dropdown";
+@import "./../vendor/bootstrap/breadcrumb";
+@import "./../vendor/bootstrap/transitions";
+@import "./../vendor/bootstrap/nav";
+
+@import "./../vendor/photoswipe/photoswipe";
+
+@import "./../main/utils";
+
+@import "../main/components/section";
+
+@import "./../main/components/logo-block";
+@import "./../main/components/item";
+@import "./../main/components/modal";
+@import "./../main/components/site-menu";
+@import "./../main/components/solution";
+@import "./../main/components/checkbox";
+@import "./../main/components/review";
+@import "./../main/components/slider";
+@import "./../main/components/service";
+@import "./../main/components/products-list";
+@import "./../main/components/product-tabs";
+@import "./../main/components/product";
+@import "./../main/components/breadcrumb";
+@import "./../main/components/list";
+@import "./../main/components/table";
+@import "./../main/components/searchbar";
+
+@import "./../main/pages/pages";
+
+html {
+  font-size: 14px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  &.k-header-fixed {
+    padding-top: 65px;
+  }
+}
+
+a {
+  text-decoration: underline;
+}
+
+.btn-outline-light {
+  color: #000;
+  border-width: 2px;
+}
+
+.k-form__form-group--checkbox {
+  & span.k-form__field-error {
+    display: none !important;
+  }
+}
+
+span.k-form__field-error {
+  display: block;
+  margin-top: 0.5rem;
+  color: #db2727;
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    &.k-header-fixed {
+      padding-top: 124px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  body {
+    &.k-header-fixed {
+      padding-top: 139px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    &.k-header-fixed {
+      padding-top: 150px;
+    }
+  }
+}

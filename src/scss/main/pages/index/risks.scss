@@ -1,0 +1,76 @@
+.k-risks-section {
+  position: relative;
+  overflow: hidden;
+  background-image: img-url("index/risks/bg_mobile.jpg");
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 185px);
+    width: 390px;
+    height: 336px;
+    background: no-repeat img-url("index/risks/director_mobile.png") center / cover;
+    content: "";
+    pointer-events: none;
+  }
+
+  & .container {
+    padding-bottom: 100px;
+  }
+
+  & .k-section__title {
+    font-size: 3.425rem;
+  }
+
+  & .k-section__bg-content {
+    padding-bottom: 200px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-risks-section {
+    &::before {
+      width: 540px;
+      height: 470px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-risks-section {
+    background-image: img-url("index/risks/bg.jpg");
+
+    &::before {
+      left: calc(50% - 420px);
+      width: 1000px;
+      height: 640px;
+      background-image: img-url("index/risks/director.png");
+    }
+
+    & .k-section__title {
+      max-width: 620px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-risks-section {
+    &::before {
+      width: 1106px;
+      height: 713px;
+    }
+
+    & .k-section__bg-content {
+      max-width: 1020px;
+    }
+
+    & .k-section__title {
+      max-width: 580px;
+      font-size: 2.625rem;
+    }
+
+    & .k-section__btn {
+      padding: 1.35rem 2.5rem;
+    }
+  }
+}

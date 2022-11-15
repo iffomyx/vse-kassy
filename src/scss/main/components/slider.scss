@@ -1,0 +1,74 @@
+.k-slider {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 25px;
+    height: 100%;
+    content: "";
+    pointer-events: none;
+  }
+
+  &::before {
+    left: -40px;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+  }
+
+  &::after {
+    right: -40px;
+    background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+  }
+
+  & .swiper-wrapper {
+    padding: 50px 0;
+  }
+
+  & .swiper-pagination {
+    position: static !important;
+    width: auto !important;
+    flex-wrap: wrap;
+  }
+
+  & .swiper-pagination-bullet  {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid $black;
+    opacity: 1;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background-color: #f7ad5c;
+    border: 1px solid #ebebeb;
+  }
+}
+
+.k-slider__main {
+  margin: 0 -40px !important;
+  padding: 0 40px !important;
+}
+
+.k-slider__btn {
+  width: 64px;
+  height: 64px;
+}
+
+@include media-breakpoint-up(xl) {
+  .k-slider {
+    &::before {
+      left: -28px;
+    }
+
+    &::after {
+      right: -28px;
+    }
+  }
+
+  .k-slider__main {
+    margin: 0 -26px !important;
+    padding: 0 26px !important;
+  }
+}

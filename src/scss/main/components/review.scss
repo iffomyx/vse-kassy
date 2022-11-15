@@ -1,0 +1,14 @@
+.k-review__author {
+  font-size: 1.425rem;
+  font-weight: 700;
+}
+
+.k-review__text {
+  font-size: 1.285rem;
+}
+
+@include media-breakpoint-up(xl) {
+  .k-review__text {
+    font-size: 1rem;
+  }
+}

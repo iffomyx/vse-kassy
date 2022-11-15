@@ -1,0 +1,77 @@
+.k-approach-section {
+  position: relative;
+  background-image: img-url("index/approach/bg_mobile.jpg");
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    pointer-events: none;
+  }
+
+  &::before {
+    height: 100%;
+    background-color: rgba($black, 0.2);
+  }
+
+  &::after {
+    height: 300px;
+    background: linear-gradient(to bottom, rgba($black, 0.8), rgba(255, 255, 255, 0));
+  }
+
+  & .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.k-approach-section__item-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.k-approach-section__item-title {
+  font-size: 1.225rem;
+}
+
+@include media-breakpoint-up(md) {
+  .k-approach-section__item {
+    min-height: 155px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-approach-section {
+    background-image: img-url("index/approach/bg.jpg");
+  }
+
+  .k-approach-section__item {
+    min-height: 152px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-approach-section__item {
+    min-height: 178px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-approach-section {
+    & .k-section__title {
+      max-width: 800px;
+    }
+  }
+
+  .k-approach-section__item {
+    min-height: 198px;
+  }
+
+  .k-approach-section__item-icon {
+    width: 70px;
+    height: 70px;
+  }
+}

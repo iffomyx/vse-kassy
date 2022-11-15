@@ -1,0 +1,23 @@
+@include media-breakpoint-up(xxl) {
+  .k-3-steps-section {
+    & .k-3-steps-section__col {
+      &:first-child {
+        & .k-3-steps-section__text {
+          max-width: 230px;
+        }
+      }
+
+      &:nth-child(2) {
+        & .k-3-steps-section__text {
+          max-width: 380px;
+        }
+      }
+
+      &:last-child {
+        & .k-3-steps-section__text {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}

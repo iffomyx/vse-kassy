@@ -1,0 +1,24 @@
+.k-questions-section {
+  background-image: img-url("index/questions/bg_mobile.jpg");
+
+  & .k-section__bg-content {
+    max-width: 860px;
+    box-shadow: 0 20px 60px 0 rgba(247, 173, 92, 0.45);
+  }
+
+  & .k-text {
+    max-width: 540px;
+  }
+}
+
+.k-questions-section--product-page {
+  & .k-section__title {
+    max-width: 670px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-questions-section {
+    background-image: img-url("index/questions/bg.jpg");
+  }
+}

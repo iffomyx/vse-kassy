@@ -1,0 +1,27 @@
+.k-service {
+  margin-bottom: 20px;
+  padding: 20px 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.k-service__dots {
+  flex: 1 1 auto;
+  min-width: 15px;
+  height: 1px;
+  margin: 0 10px;
+  border-bottom: 1px dashed #cfcfcf;
+}
+
+.k-service__name {
+  font-size: 1rem;
+  flex: 0 1 auto;
+}
+
+.k-service__price {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 1.5rem;
+}

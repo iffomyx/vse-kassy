@@ -1,0 +1,30 @@
+# phpstorm
+.idea/*
+!.idea/inspectionProfiles/Project_Default.xml
+!.idea/codeStyleSettings.xml
+!.idea/codeStyles/codeStyleConfig.xml
+!.idea/codeStyles/Project.xml
+!.idea/typescript-compiler.xml
+
+# cache
+cache/*
+!cache/.ignore
+
+# css/js generated files
+web/css
+!web/css/.ignore
+web/js/min
+!web/js/min/.ignore
+
+web/**/*.html
+!web/mail/**/*.html
+web/manifest.json
+
+node_modules
+package-lock.json
+
+# ignore map files
+web/**/*.js.map
+web/**/*.css.map
+
+

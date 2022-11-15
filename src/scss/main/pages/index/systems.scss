@@ -1,0 +1,50 @@
+.k-systems-section__item {
+  & img {
+    max-width: 250px;
+  }
+
+  & .k-heading-font {
+    font-size: 2rem;
+  }
+}
+
+.k-systems-section__list {
+  font-size: 1.25rem;
+
+  & li {
+    display: flex;
+
+    &::before {
+      margin-right: 15px;
+      font-size: inherit;
+      color: #f7ad5c;
+      content: "+";
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-systems-section__img-wrp {
+    height: 180px;
+  }
+
+  .k-systems-section__item {
+    height: 100%;
+  }
+
+  .k-systems-section__list {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-systems-section__img-wrp {
+    height: 300px;
+  }
+
+  .k-systems-section__item {
+    & img {
+      max-width: 420px;
+    }
+  }
+}

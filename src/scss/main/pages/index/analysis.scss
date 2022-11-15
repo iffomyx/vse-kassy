@@ -1,0 +1,105 @@
+.k-analysis-section {
+  position: relative;
+  background: no-repeat img-url("index/analysis/bg_mobile.jpg") center / cover;
+
+  & .container {
+    position: relative;
+    padding-bottom: 180px;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 142px);
+      width: 284px;
+      height: 226px;
+      background: no-repeat img-url("index/analysis/books.png") center / cover;
+      content: "";
+      pointer-events: none;
+    }
+  }
+
+  & .k-section__bg-content {
+    padding-bottom: 60px !important;
+  }
+
+  & .k-check__text {
+    font-size: 10px;
+  }
+}
+
+.k-analysis-section--rest {
+  & .container {
+    &::before {
+      background-image: img-url("index/analysis/books_restaurant.png");
+    }
+  }
+}
+
+.k-analysis-section__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+@include media-breakpoint-up(lg) {
+  .k-analysis-section {
+    & .container {
+      padding-bottom: 0;
+
+      &::before {
+        left: 0;
+        bottom: 90px;
+        width: 454px;
+        height: 370px;
+      }
+    }
+
+    & .k-section__bg-content {
+      padding-bottom: 3rem !important;
+    }
+  }
+
+  .k-analysis-section__content {
+    max-width: 560px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-analysis-section {
+    background-image: img-url("index/analysis/bg.jpg");
+    & .container {
+      &::before {
+        width: 590px;
+        height: 472px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-analysis-section {
+    & .container {
+      &::before {
+        bottom: 20px;
+        left: 130px;
+        width: 840px;
+        height: 660px;
+        transform: none;
+      }
+    }
+
+    & .k-section__title {
+      margin-right: -30px !important;
+    }
+  }
+
+  .k-analysis-section--rest {
+    & .k-section__title {
+      margin-right: -100px !important;
+    }
+  }
+
+  .k-analysis-section__content {
+    margin-right: 300px;
+  }
+}

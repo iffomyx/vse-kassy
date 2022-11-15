@@ -1,0 +1,26 @@
+.k-region-delivery-section__accent-text {
+  max-width: 1000px;
+  font-size: 1.725rem;
+  line-height: 1.25;
+}
+
+.k-region-delivery-section__item {
+  height: 90px;
+  padding: 15px;
+
+  img {
+    max-width: 120px;
+    max-height: 50px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-region-delivery-section__item {
+    height: 140px;
+
+    img {
+      max-width: 146px;
+      max-height: 96px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.k-solution__img {
+  width: 80px;
+}
+
+.k-solution__title {
+  font-size: 1.285rem;
+}
+
+@include media-breakpoint-up(xl) {
+  .k-solution {
+    height: 100%;
+
+    & .k-text {
+      font-size: 1rem;
+    }
+  }
+
+  .k-solution__title {
+    font-size: 1.35rem;
+  }
+
+  .k-solution__img {
+    width: 110px;
+  }
+}

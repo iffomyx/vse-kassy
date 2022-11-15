@@ -1,0 +1,23 @@
+.k-modal__btn-close {
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.k-menu-modal__text {
+  font-size: $font-size-lg;
+}
+
+.k-menu-modal__list {
+  font-size: 1.425rem;
+}
+
+@include media-breakpoint-up(xs) {
+  .k-menu-modal {
+    & .modal-content {
+      max-width: 320px;
+      margin: 45px auto;
+    }
+  }
+}

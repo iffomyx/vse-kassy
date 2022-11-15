@@ -1,0 +1,13 @@
+.k-list {
+  padding-left: 0;
+  list-style-type: none;
+
+  & li {
+    display: flex;
+
+    &::before {
+      margin-right: 4px;
+      content: "+";
+    }
+  }
+}

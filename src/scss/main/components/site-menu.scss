@@ -1,0 +1,49 @@
+.k-site-menu {
+  position: relative;
+  z-index: 120;
+}
+
+.k-site-menu__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 110;
+  display: none;
+  min-width: 250px;
+}
+
+.k-site-menu__submenu-arrow {
+  background-color: #efefef;
+}
+
+.k-site-menu__submenu-content {
+  margin-top: 15px;
+  background-color: $white;
+  box-shadow: $base-box-shadow;
+}
+
+.k-site-menu__item-w-submenu {
+  &:hover {
+    & .k-site-menu__submenu {
+      display: block;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-site-menu__submenu {
+    min-width: 440px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-site-menu a {
+    font-size: $font-size-lg;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-site-menu .k-heading-font {
+    font-size: 1.5rem;
+  }
+}

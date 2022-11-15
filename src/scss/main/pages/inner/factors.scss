@@ -1,0 +1,16 @@
+.k-factors-section {
+  background-image: img-url("inner/factors/bg_mobile.jpg");
+  & .k-section__bg-content {
+    max-width: 1140px;
+  }
+
+  & .k-section__title {
+    max-width: 100%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-factors-section {
+    background-image: img-url("inner/factors/bg.jpg");
+  }
+}

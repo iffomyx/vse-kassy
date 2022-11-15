@@ -1,0 +1,327 @@
+.k-intro-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  & .k-section__title {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+}
+
+.k-intro-section--main {
+  & .k-intro-section__wrp {
+    background-image: img-url("index/intro/main-bg_mobile.jpg");
+    background-position: calc(50% - 55px) calc(100% - 15px);
+  }
+}
+
+.k-intro-section--shop {
+  & .k-intro-section__wrp {
+    background-image: img-url("index/intro/shop-bg_mobile.jpg");
+    background-position: 50% calc(100% - 20px);
+  }
+}
+
+.k-intro-section--1c {
+  & .k-intro-section__wrp {
+    background-image: img-url("index/intro/1c-bg_mobile.jpg");
+    background-position: 50% calc(100% - 60px);
+  }
+}
+
+.k-intro-section--rest {
+  & .k-intro-section__wrp {
+    position: relative;
+    background-image: img-url("index/intro/rest-bg_mobile.jpg");
+    background-position: 50% calc(100% - 60px);
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 147px);
+      bottom: 70px;
+      width: 294px;
+      height: 230px;
+      background: no-repeat img-url("index/intro/rest-device.png") center / cover;
+      content: "";
+      pointer-events: none;
+    }
+  }
+}
+
+.k-intro-section__wrp {
+  margin-bottom: -80px;
+  padding-bottom: 310px;
+  background-repeat: no-repeat;
+}
+
+.k-intro-section__text {
+  margin-bottom: 1rem;
+}
+
+.k-intro-section__advantages-item {
+  padding: 15px;
+}
+
+.k-intro-section__advantages-num {
+  font-size: 1.425rem;
+}
+
+.k-intro-section__advantages-icon {
+  width: 42px;
+  height: 42px;
+}
+
+@include media-breakpoint-up(xs) {
+  .k-intro-section {
+    & .k-section__title {
+      font-size: 1.875rem;
+    }
+  }
+
+  .k-intro-section__text {
+    font-size: 1.15rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .k-intro-section {
+    & .k-section__title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .k-intro-section--main {
+    & .k-intro-section__wrp {
+      background-image: img-url("index/intro/main-bg.jpg");
+      background-position: top -20px right;
+      background-size: 700px;
+    }
+  }
+  .k-intro-section--shop {
+    & .k-intro-section__wrp {
+      background-image: img-url("index/intro/shop-bg.jpg");
+      background-position: top 25px right;
+      background-size: 600px;
+    }
+  }
+
+  .k-intro-section--1c {
+    & .k-intro-section__wrp {
+      background-image: img-url("index/intro/1c-bg.jpg");
+      background-position: top 15px right;
+      background-size: 550px;
+    }
+  }
+
+  .k-intro-section--rest {
+    background: no-repeat img-url("index/intro/rest-bg.jpg") center / cover;
+
+    & .k-intro-section__wrp {
+      background: none;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        left: calc(50% + 30px);
+        bottom: 160px;
+        width: 350px;
+        height: 320px;
+      }
+    }
+  }
+
+  .k-intro-section__wrp {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto -100px;
+    padding-bottom: 140px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: -60px;
+      width: 150px;
+      height: 100%;
+      background: linear-gradient(to left, #fff, #fff 50%, rgba(255, 255, 255, 0));
+      content: "";
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-intro-section {
+    margin-top: -48px;
+    padding: 0 0 80px;
+  }
+
+  .k-intro-section--main {
+    & .k-intro-section__wrp {
+      background-size: 900px 530px;
+      background-position: top 48px right;
+    }
+  }
+
+  .k-intro-section--1c {
+    & .k-intro-section__wrp {
+      background-size: 750px;
+      background-position: top 48px right;
+    }
+  }
+
+  .k-intro-section--shop {
+    & .k-intro-section__wrp {
+      background-size: 900px 530px;
+    }
+  }
+
+  .k-intro-section__wrp {
+    max-width: 960px;
+    padding-top: 88px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-intro-section {
+    padding: 0 0 80px;
+
+    & .k-section__title {
+      font-size: 3.5rem;
+    }
+  }
+
+  .k-intro-section--form {
+    & .k-section__btn {
+      max-width: 270px;
+    }
+  }
+
+  .k-intro-section--main {
+    & .k-intro-section__wrp {
+      background-position: top 68px right;
+    }
+  }
+
+  .k-intro-section--1c {
+    & .k-intro-section__wrp {
+      background-position: top 80px right;
+    }
+  }
+
+  .k-intro-section--shop,
+  .k-intro-section--1c {
+    & .k-intro-section__text {
+      max-width: 420px;
+    }
+  }
+
+  .k-intro-section--rest {
+    background: no-repeat img-url("index/intro/rest-bg.jpg") center / cover;
+
+    & .k-intro-section__wrp {
+      &::after {
+        right: 0;
+        left: auto;
+        width: 480px;
+      }
+    }
+  }
+
+  .k-intro-section__wrp {
+    max-width: 1140px;
+    padding-top: 108px;
+  }
+
+  .k-intro-section__text {
+    max-width: 560px;
+  }
+
+  .k-intro-section__advantages-item {
+    padding: 25px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-intro-section {
+    margin-top: -55px;
+    padding: 0 0 80px;
+
+    & .k-section__title {
+      font-size: 4.5rem;
+    }
+  }
+
+  .k-intro-section--main {
+    & .k-intro-section__wrp {
+      background-size: 1685px 992px;
+      background-position: top right;
+    }
+  }
+
+  .k-intro-section--1c {
+    & .k-intro-section__wrp {
+      background-size: 1200px 720px;
+      background-position: top 140px right;
+    }
+
+    & .k-section__title {
+      max-width: 920px;
+    }
+  }
+
+  .k-intro-section--shop {
+    & .k-intro-section__wrp {
+      background-size: 1685px 992px;
+    }
+  }
+
+  .k-intro-section--rest {
+    & .k-intro-section__wrp {
+      &::after {
+        top: 200px;
+        right: 140px;
+        left: auto;
+        bottom: auto;
+        width: 792px;
+        height: 620px;
+      }
+    }
+  }
+
+  .k-intro-section--form {
+    & .k-intro-section__form {
+      max-width: 620px;
+    }
+  }
+
+  .k-intro-section__wrp {
+    max-width: 1920px;
+    padding-top: 186px;
+  }
+
+  .k-intro-section__text {
+    margin-bottom: 3rem;
+    font-size: 1.325rem;
+  }
+
+  .k-intro-section__advantages-item {
+    padding: 30px 40px;
+  }
+
+  .k-intro-section__advantages-icon {
+    width: 54px;
+    height: 54px;
+
+    & svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .k-intro-section__advantages-num {
+    font-size: 2.225rem;
+  }
+}

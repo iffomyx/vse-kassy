@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+  <title>Все-кассы</title>
+</head>
+<body>
+  <div class="d-flex flex-column justify-content-between">
+    <header class="k-logo-block k-logo-block--header js-header">
+      <div class="py-3 border-bottom">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center">
+              <a class="d-inline-block" href="/">
+                <img class="k-logo-block__logo flex-shrink-0" src="./img/logo.svg" width="188" height="57" alt="Логотип компании Все-кассы">
+              </a>
+              <span class="k-logo-block__text d-none d-xl-block ml-xl-3">20 лет занимаемся автоматизацией торговли и ресторанов</span>
+            </div>
+            <div class="d-flex align-items-center ml-auto">
+              <div class="k-logo-block__info d-none d-lg-flex">
+                <div class="mr-3 mr-xxl-4">
+                  <span class="d-block font-weight-bold">9:00 - 20:00 Ежедневно</span>
+                  <span>Техподдержка</span>
+                </div>
+                <div>
+                  <a href="tel:74951066882" class="d-block text-black font-weight-bold">+7 (495) 106-68-82</a>
+                  <a href="tel:74951287866" class="text-black">+7 (495) 128-78-66</a>
+                </div>
+              </div>
+
+              <a href="#" class="k-logo-block__btn-circle icon-message btn mr-xl-1"></a>
+              <a href="#" class="k-logo-block__btn-circle icon-search btn mr-xl-1"></a>
+              <a href="#" class="k-logo-block__btn-circle icon-cart btn position-relative mr-2 mr-xl-3">
+                <span class="k-logo-block__cart-num d-block bg-primary rounded-pill">12</span>
+              </a>
+
+              <button class="k-logo-block__btn-call btn btn-primary d-none d-sm-block">Заказать обратный звонок</button>
+              <button
+                class="k-logo-block__btn-circle k-logo-block__btn-circle--menu icon-menu btn btn-primary d-lg-none ml-2"
+                data-toggle="modal" data-target="#mobileMenuModal"
+              >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="k-site-menu d-none d-lg-block pt-4">
+        <nav class="container">
+          <ul class="d-flex justify-content-between mb-0 text-center list-unstyled user-select-none">
+            <li><a class="k-heading-font text-black" href="/">Программное обеспечение</a></li>
+            <li class="k-site-menu__item-w-submenu d-flex position-relative">
+              <div class="position-relative d-flex align-items-center">
+                <a class="k-heading-font text-black" href="/">Автоматизация</a>
+                <span class="k-site-menu__submenu-arrow d-inline-flex d-xl-none rounded ml-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="k-site-menu__submenu bg-transparent">
+                <div class="k-site-menu__submenu-content px-4 py-3">
+                  <ul class="list-unstyled text-left">
+                    <li class="mb-3">
+                      <a class="k-heading-font text-black" href="/index-shop.html">Автоматизация продуктового магазина</a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="k-heading-font text-black" href="/index-1c.html">Автоматизация 1с</a>
+                    </li>
+                    <li>
+                      <a class="k-heading-font text-black" href="/index-restaurant.html">Автоматизация ресторана</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a class="k-heading-font text-black" href="/products.html">Оборудование</a></li>
+            <li><a class="k-heading-font text-black" href="/services.html">Услуги</a></li>
+            <li><a class="k-heading-font text-black" href="/payment-delivery.html">Оплата и доставка</a></li>
+            <li><a class="k-heading-font text-black" href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="d-flex flex-column justify-content-between">
+      <section class="k-section k-section--bg k-inner-intro-section k-inner-intro-section--services">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <h2 class="k-section__title k-inner-intro-section__title text-center text-white">Услуги по<br> автоматизации</h2>
+        </div>
+      </section>
+
+      <div class="k-products-list k-products-list--services">
+        <div class="container">
+          <div class="k-products-list__content d-flex flex-column p-4">
+            <div class="k-products-list__categories">
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                  <a class="k-products-list__category-link k-products-list__category-link--current btn btn-outline-light w-100 text-decoration-none" href="#">
+                    Автоматизация 1С и&nbsp;склада
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                  <a class="k-products-list__category-link btn btn-outline-light w-100 text-decoration-none" href="#">
+                    Онлайн-кассы
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                  <a class="k-products-list__category-link btn btn-outline-light w-100 text-decoration-none" href="#">
+                    Доп. оборудование
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                  <a class="k-products-list__category-link btn btn-outline-light w-100 text-decoration-none" href="#">
+                    Услуги
+                  </a>
+                </div>
+              </div>
+            </div>
+            <form id="filterForm" class="k-products-list__filter">
+              <div class="k-products-list__price-filter d-flex flex-column flex-xxl-row align-items-lg-center">
+                <span class="k-products-list__slider-label mr-lg-4 text-center">Стоимость</span>
+                <div class="k-products-list__range-slider w-100 mb-5 mb-xxl-0">
+                  <label for="filterFormPrice" class="d-none"></label>
+                  <input
+                    data-skin="round" data-type="double" data-min="500" data-max="3000" data-from="500" data-to="3000" data-hide-min-max="true" data-postfix=" ₽"
+                    class="js-range-slider" id="filterFormPrice" type="text" name="price-range" value=""
+                  >
+                </div>
+                <button class="k-products-list__btn-submit btn btn-primary w-100" type="submit">Фильтровать</button>
+              </div>
+              <input class="js-range-slide-min" name="price-min" type="hidden">
+              <input class="js-range-slide-max" name="price-max" type="hidden">
+            </form>
+          </div>
+          <div class="k-products-list__main">
+            <div class="row">
+              <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 mb-gutter-width">
+                <div class="k-product k-item d-flex flex-column">
+                  <a class="k-product__link d-flex flex-column mb-4 text-black text-center text-decoration-none" href="/product-page.html">
+                    <span class="k-product__img-wrp">
+                      <img width="300" height="300" class="img-fluid d-block mx-auto" src="https://vse-kassi.ru/wp-content/uploads/2018/03/ATOL_91F_02_03-300x300.jpg" alt="">
+                    </span>
+                    <span class="k-product__info d-flex flex-column">
+                      <span class="k-product__name k-text px-4 mb-4">АТОЛ 1Ф</span>
+                      <span class="k-product__price k-heading-font mt-auto mb-4">11 680 ₽</span>
+                      <p class="k-product__description px-4 k-text">Лучшее соотношение цена-качество для фискального регистратора</p>
+                    </span>
+                  </a>
+                  <form class="k-product__actions d-flex align-items-stretch w-100 mt-auto" action="">
+                    <div class="input-group mr-4">
+                      <input class="k-product__quantity-input form-control" name="quantity" type="number" min="1" value="1" inputmode="numeric">
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Купить</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 mb-gutter-width">
+                <div class="k-product k-item d-flex flex-column">
+                  <a class="k-product__link d-flex flex-column mb-4 text-black text-center text-decoration-none" href="/product-page.html">
+                    <span class="k-product__img-wrp">
+                      <img width="300" height="300" class="img-fluid d-block mx-auto" src="https://vse-kassi.ru/wp-content/uploads/2018/03/ATOL_91F_02_03-300x300.jpg" alt="">
+                    </span>
+                    <span class="k-product__info d-flex flex-column">
+                      <span class="k-product__name k-text px-4 mb-4">АТОЛ 1Ф</span>
+                      <span class="k-product__price k-heading-font mt-auto mb-4">11 680 ₽</span>
+                      <p class="k-product__description px-4 k-text">Лучшее соотношение цена-качество для фискального регистратора</p>
+                    </span>
+                  </a>
+                  <form class="k-product__actions d-flex align-items-stretch w-100 mt-auto" action="">
+                    <div class="input-group mr-4">
+                      <input class="k-product__quantity-input form-control" name="quantity" type="number" min="1" value="1" inputmode="numeric">
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Купить</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 mb-gutter-width">
+                <div class="k-product k-item d-flex flex-column">
+                  <a class="k-product__link d-flex flex-column mb-4 text-black text-center text-decoration-none" href="/product-page.html">
+                    <span class="k-product__img-wrp">
+                      <img width="300" height="300" class="img-fluid d-block mx-auto" src="https://vse-kassi.ru/wp-content/uploads/2018/03/ATOL_91F_02_03-300x300.jpg" alt="">
+                    </span>
+                    <span class="k-product__info d-flex flex-column">
+                      <span class="k-product__name k-text px-4 mb-4">АТОЛ 1Ф</span>
+                      <span class="k-product__price k-heading-font mt-auto mb-4">11 680 ₽</span>
+                      <p class="k-product__description px-4 k-text">Лучшее соотношение цена-качество для фискального регистратора</p>
+                    </span>
+                  </a>
+                  <form class="k-product__actions d-flex align-items-stretch w-100 mt-auto" action="">
+                    <div class="input-group mr-4">
+                      <input class="k-product__quantity-input form-control" name="quantity" type="number" min="1" value="1" inputmode="numeric">
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Купить</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 mb-gutter-width">
+                <div class="k-product k-item d-flex flex-column">
+                  <a class="k-product__link d-flex flex-column mb-4 text-black text-center text-decoration-none" href="/product-page.html">
+                    <span class="k-product__img-wrp">
+                      <img width="300" height="300" class="img-fluid d-block mx-auto" src="https://vse-kassi.ru/wp-content/uploads/2018/03/ATOL_91F_02_03-300x300.jpg" alt="">
+                    </span>
+                    <span class="k-product__info d-flex flex-column">
+                      <span class="k-product__name k-text px-4 mb-4">АТОЛ 1Ф</span>
+                      <span class="k-product__price k-heading-font mt-auto mb-4">11 680 ₽</span>
+                      <p class="k-product__description px-4 k-text">Лучшее соотношение цена-качество для фискального регистратора</p>
+                    </span>
+                  </a>
+                  <form class="k-product__actions d-flex align-items-stretch w-100 mt-auto" action="">
+                    <div class="input-group mr-4">
+                      <input class="k-product__quantity-input form-control" name="quantity" type="number" min="1" value="1" inputmode="numeric">
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Купить</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-4 col-xxl-3 mb-gutter-width">
+                <div class="k-product k-item d-flex flex-column">
+                  <a class="k-product__link d-flex flex-column mb-4 text-black text-center text-decoration-none" href="/product-page.html">
+                    <span class="k-product__img-wrp">
+                      <img width="300" height="300" class="img-fluid d-block mx-auto" src="https://vse-kassi.ru/wp-content/uploads/2018/03/ATOL_91F_02_03-300x300.jpg" alt="">
+                    </span>
+                    <span class="k-product__info d-flex flex-column">
+                      <span class="k-product__name k-text px-4 mb-4">АТОЛ 1Ф</span>
+                      <span class="k-product__price k-heading-font mt-auto mb-4">11 680 ₽</span>
+                      <p class="k-product__description px-4 k-text">Лучшее соотношение цена-качество для фискального регистратора</p>
+                    </span>
+                  </a>
+                  <form class="k-product__actions d-flex align-items-stretch w-100 mt-auto" action="">
+                    <div class="input-group mr-4">
+                      <input class="k-product__quantity-input form-control" name="quantity" type="number" min="1" value="1" inputmode="numeric">
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Купить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="k-section k-section--bg k-questions-section">
+        <div class="container">
+          <div class="k-section__bg-content mx-auto px-3 py-5 text-center">
+            <h2 class="k-section__title mx-auto mb-3">
+              Ответьте на <span class="text-primary">4 вопроса</span> и узнайте, какая система автоматизации <span class="text-primary">подходит для Вас</span>
+            </h2>
+            <p class="k-text mx-auto mb-5">В подарок по СМС получите персональный подбор необходимого&nbsp;оборудования</p>
+            <div class="">
+              <button class="k-section__btn btn btn-primary">
+                Узнайте какая система <span class="text-nowrap">мне нужна</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="k-section k-why-we-section">
+        <div class="container">
+          <h2 class="k-section__title mx-auto mb-5 text-center">Почему <span class="text-primary">все-кассы.ру?</span></h2>
+          <div class="row">
+            <div class="col-6 col-xl-4 col-xxl-2">
+              <div class="k-why-we-section__item k-item d-flex flex-column align-items-center text-center py-5 px-3">
+                <svg class="mb-3" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 30L52.5 52.5M30 30H15L10 15L15 10L30 15V30ZM96.2949 13.7051L83.1569 26.8431C81.1768 28.8232 80.1867 29.8133 79.8158 30.9549C79.4895 31.9591 79.4895 33.0409 79.8158 34.0451C80.1867 35.1867 81.1768 36.1768 83.1568 38.1568L84.3431 39.3431C86.3232 41.3232 87.3133 42.3133 88.4549 42.6842C89.4591 43.0105 90.5409 43.0105 91.5451 42.6842C92.6867 42.3133 93.6768 41.3232 95.6569 39.3431L107.946 27.0536C109.27 30.2744 110 33.802 110 37.5C110 52.6878 97.6878 65 82.5 65C80.669 65 78.8797 64.821 77.1488 64.4797C74.7181 64.0003 73.5027 63.7606 72.7659 63.834C71.9826 63.9121 71.5966 64.0295 70.9026 64.4009C70.2497 64.7503 69.5949 65.4051 68.2851 66.7149L32.5 102.5C28.3579 106.642 21.6421 106.642 17.5 102.5C13.3579 98.3578 13.3579 91.6421 17.5 87.4999L53.2851 51.7148C54.5949 50.4051 55.2497 49.7503 55.5991 49.0974C55.9705 48.4034 56.0879 48.0173 56.166 47.2341C56.2394 46.4973 55.9997 45.2819 55.5203 42.8512C55.179 41.1203 55 39.331 55 37.5C55 22.3122 67.3122 10 82.5 10C87.5275 10 92.2399 11.3491 96.2949 13.7051ZM60.0003 74.9997L87.5 102.499C91.6421 106.642 98.3578 106.642 102.5 102.499C106.642 98.3573 106.642 91.6416 102.5 87.4994L79.8766 64.8765C78.2751 64.7249 76.7135 64.436 75.2039 64.0217C73.2586 63.4877 71.1247 63.8753 69.6983 65.3017L60.0003 74.9997Z" stroke="#F7AD5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="k-heading-font mb-3">01</span>
+                <span class="k-text">Опыт автоматизации более 20 лет</span>
+              </div>
+            </div>
+            <div class="col-6 col-xl-4 col-xxl-2">
+              <div class="k-why-we-section__item k-item d-flex flex-column align-items-center text-center py-5 px-2">
+                <svg class="mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M66.6663 75L79.1663 62.5M79.1663 62.5L91.6663 75M79.1663 62.5V87.5M49.9997 64.5833H31.2497C25.4348 64.5833 22.5274 64.5833 20.1616 65.301C14.8349 66.9168 10.6665 71.0852 9.05067 76.4119C8.33301 78.7777 8.33301 81.6852 8.33301 87.5M60.4163 31.25C60.4163 41.6053 52.0217 50 41.6663 50C31.311 50 22.9163 41.6053 22.9163 31.25C22.9163 20.8947 31.311 12.5 41.6663 12.5C52.0217 12.5 60.4163 20.8947 60.4163 31.25Z" stroke="#F7AD5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="k-heading-font mb-3">02</span>
+                <span class="k-text">После внедрения проводим детальное обучение сотрудников и поддерживаем по&nbsp;всем вопросам</span>
+              </div>
+            </div>
+            <div class="col-6 col-xl-4 col-xxl-2">
+              <div class="k-why-we-section__item k-item d-flex flex-column align-items-center text-center py-5 px-2">
+                <svg class="mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36.9847 54.5638L19.5887 32.8188C18.5058 31.4652 17.9644 30.7884 17.5794 30.0347C17.2378 29.3661 16.9881 28.6543 16.8371 27.9188C16.667 27.0898 16.667 26.223 16.667 24.4896V21.6666C16.667 16.9995 16.667 14.666 17.5753 12.8834C18.3742 11.3154 19.6491 10.0405 21.2171 9.24159C22.9997 8.33331 25.3332 8.33331 30.0003 8.33331H70.0003C74.6674 8.33331 77.001 8.33331 78.7836 9.24159C80.3516 10.0405 81.6264 11.3154 82.4254 12.8834C83.3337 14.666 83.3337 16.9995 83.3337 21.6666V24.4896C83.3337 26.223 83.3337 27.0898 83.1635 27.9188C83.0126 28.6543 82.7629 29.3661 82.4213 30.0347C82.0363 30.7884 81.4948 31.4652 80.4119 32.8188L63.016 54.5638M20.8339 12.5L50.0006 50L79.1668 12.5M64.7317 56.1019C72.8676 64.2378 72.8676 77.4288 64.7317 85.5647C56.5958 93.7006 43.4049 93.7006 35.2689 85.5647C27.133 77.4288 27.133 64.2379 35.2689 56.1019C43.4048 47.966 56.5958 47.966 64.7317 56.1019Z" stroke="#F7AD5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="k-heading-font mb-3">03</span>
+                <span class="k-text">Опытная команда внедрения, сертифицированная в компаниях 1С, Атол, Мой склад, IIKO, и других</span>
+              </div>
+            </div>
+            <div class="col-6 col-xl-4 col-xxl-2">
+              <div class="k-why-we-section__item k-item d-flex flex-column align-items-center text-center py-5 px-2">
+                <svg class="mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M62.7105 37.5H22.9167C17.1637 37.5 12.5 32.8363 12.5 27.0833C12.5 21.3304 17.1637 16.6667 22.9167 16.6667H62.7105M37.2895 83.3333H77.0833C82.8363 83.3333 87.5 78.6696 87.5 72.9167C87.5 67.1637 82.8363 62.5 77.0833 62.5H37.2895M12.5 72.9167C12.5 80.9708 19.0292 87.5 27.0833 87.5C35.1375 87.5 41.6667 80.9708 41.6667 72.9167C41.6667 64.8625 35.1375 58.3333 27.0833 58.3333C19.0292 58.3333 12.5 64.8625 12.5 72.9167ZM87.5 27.0833C87.5 35.1375 80.9708 41.6667 72.9167 41.6667C64.8625 41.6667 58.3333 35.1375 58.3333 27.0833C58.3333 19.0292 64.8625 12.5 72.9167 12.5C80.9708 12.5 87.5 19.0292 87.5 27.0833Z" stroke="#F7AD5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="k-heading-font mb-3">04</span>
+                <span class="k-text">Предлагаем на выбор 7 лучших программ автоматизации</span>
+              </div>
+            </div>
+            <div class="col-6 col-xl-4 col-xxl-2">
+              <div class="k-why-we-section__item k-item d-flex flex-column align-items-center text-center py-5 px-2">
+                <svg class="mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.1663 91.6667V45.8334M8.33301 54.1667V83.3334C8.33301 87.9357 12.064 91.6667 16.6663 91.6667H72.609C78.7787 91.6667 84.0255 87.1653 84.9637 81.0674L89.4508 51.9008C90.6158 44.3288 84.7573 37.5 77.0962 37.5H62.4997C60.1985 37.5 58.333 35.6346 58.333 33.3334V18.6077C58.333 12.9333 53.733 8.33337 48.0587 8.33337C46.7052 8.33337 45.4788 9.13044 44.9291 10.3672L30.2661 43.3589C29.5973 44.8636 28.1052 45.8334 26.4585 45.8334H16.6663C12.064 45.8334 8.33301 49.5643 8.33301 54.1667Z" stroke="#F7AD5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="k-heading-font mb-3">05</span>
+                <span class="k-text">Индивидуальный подход и подбор лучшего решения под ваш запрос</span>
+              </div>
+            </div>
+            <div class="col-6 col-xl-4 col-xxl-2">
+              <div class="k-why-we-section__item k-item d-flex flex-column align-items-center text-center py-5 px-2">
+                <svg class="mb-3" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M47.0107 14.3888C47.9711 12.4432 48.4513 11.4704 49.1031 11.1596C49.6703 10.8892 50.3292 10.8892 50.8964 11.1596C51.5482 11.4704 52.0284 12.4432 52.9888 14.3888L62.0999 32.847C62.3834 33.4214 62.5252 33.7085 62.7324 33.9315C62.9158 34.1289 63.1358 34.2889 63.3802 34.4025C63.6561 34.5309 63.973 34.5772 64.6069 34.6698L84.9871 37.6487C87.1333 37.9624 88.2063 38.1193 88.7029 38.6434C89.135 39.0995 89.3382 39.7262 89.256 40.349C89.1614 41.0649 88.3845 41.8215 86.8308 43.3349L72.089 57.6934C71.6295 58.141 71.3997 58.3648 71.2515 58.631C71.1202 58.8668 71.036 59.1258 71.0035 59.3937C70.9668 59.6963 71.021 60.0124 71.1295 60.6447L74.6078 80.9254C74.9747 83.0645 75.1581 84.134 74.8134 84.7687C74.5135 85.3209 73.9803 85.7082 73.3624 85.8228C72.6523 85.9544 71.6918 85.4493 69.771 84.4392L51.5512 74.8576C50.9836 74.5591 50.6997 74.4098 50.4007 74.3511C50.1359 74.2992 49.8636 74.2992 49.5988 74.3511C49.2998 74.4098 49.0159 74.5591 48.4482 74.8576L30.2285 84.4392C28.3077 85.4493 27.3472 85.9544 26.6371 85.8228C26.0192 85.7082 25.486 85.3209 25.1861 84.7687C24.8413 84.134 25.0248 83.0645 25.3917 80.9254L28.87 60.6447C28.9785 60.0124 29.0327 59.6963 28.996 59.3937C28.9635 59.1258 28.8793 58.8668 28.748 58.631C28.5998 58.3648 28.37 58.141 27.9104 57.6934L13.1687 43.3349C11.6149 41.8215 10.8381 41.0649 10.7435 40.349C10.6613 39.7262 10.8645 39.0995 11.2966 38.6434C11.7932 38.1193 12.8662 37.9624 15.0124 37.6487L35.3926 34.6698C36.0264 34.5772 36.3433 34.5309 36.6193 34.4025C36.8637 34.2889 37.0837 34.1289 37.2671 33.9315C37.4743 33.7085 37.616 33.4214 37.8996 32.847L47.0107 14.3888Z" stroke="#F7AD5C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="k-heading-font mb-3">06</span>
+                <span class="k-text">Рейтинг 4.9 на Яндекс маркете и реальные отзывы клиентов</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="k-section k-section--bg k-choice-section">
+        <div class="container">
+          <div class="k-section__bg-content mx-auto px-4 py-5 text-center">
+            <h2 class="k-section__title mx-auto mb-5 mb-lg-4">
+              Предоставим на выбор <span class="text-primary">3&nbsp;проекта</span> автоматизации&nbsp;бизнеса
+            </h2>
+            <p class="k-text mb-4">Оставьте заявку и получите консультацию</p>
+            <form id="choiceForm" class="k-form d-flex flex-column" action="">
+              <div class="d-flex align-items-start flex-column flex-lg-row mb-4">
+                <div class="k-form__form-group form-group w-100 mr-lg-4 mb-4 mb-lg-0 text-left js-form-group">
+                  <label class="d-none" for="choiceFormPhone"></label>
+                  <input id="choiceFormPhone" type="tel" name="phone" class="form-control js-phone-input" placeholder="+7 (000) 000 00 00">
+                </div>
+                <button class="k-section__btn btn btn-primary" type="submit">Перезвоните мне!</button>
+              </div>
+              <div class="k-form__form-group--checkbox d-flex justify-content-start js-form-group">
+                <label class="k-check align-items-center" for="choiceFormTerms">
+                  <input class="k-check__input" id="choiceFormTerms" type="checkbox" name="terms" required>
+                  <span class="k-check__mark"></span>
+                  <span class="k-check__text">
+                    Отправляя форму вы принимаете условия обработки <a href="#" target="_blank">персональных данных</a>.
+                  </span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="k-logo-block k-logo-block--footer">
+      <div class="py-3">
+        <div class="container">
+          <div class="d-flex flex-column flex-xs-row align-items-start align-items-xs-center">
+            <div class="d-flex align-items-center mb-3 mb-xs-0">
+              <a class="d-inline-block" href="/">
+                <img class="k-logo-block__logo flex-shrink-0" src="./img/logo.svg" width="188" height="57" alt="Логотип компании Все-кассы">
+              </a>
+              <span class="k-logo-block__text d-none d-xl-block ml-xl-3">20 лет занимаемся автоматизацией торговли и ресторанов</span>
+            </div>
+            <div class="d-flex align-items-center ml-xs-auto">
+              <div class="k-logo-block__info d-none d-lg-flex">
+                <div class="mr-3 mr-xxl-4">
+                  <span class="d-block font-weight-bold">9:00 - 20:00 Ежедневно</span>
+                  <span>Техподдержка</span>
+                </div>
+                <div>
+                  <a href="tel:74951066882" class="d-block text-black font-weight-bold">+7 (495) 106-68-82</a>
+                  <a href="tel:74951287866" class="text-black">+7 (495) 128-78-66</a>
+                </div>
+              </div>
+              <button class="k-logo-block__btn-call btn btn-primary">Заказать обратный звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="k-modal k-searchbar-modal modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="">
+          <div class="form-group position-relative mb-0">
+            <label class="d-none" for="searchFormInput"></label>
+            <svg class="k-searchbar-modal__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <input
+              id="searchFormInput"
+              type="text"
+              name="search-value"
+              class="form-control"
+              placeholder="Введите ключевые слова для поиска"
+              minlength="2"
+            >
+            <div class="k-searchbar-content__loader"></div>
+          </div>
+        </form>
+        <div class="k-searchbar-modal__result-list">
+          <span class="k-searchbar-modal__result-item k-searchbar-modal__result-item--empty d-block text-center">
+            Ничего не найдено
+          </span>
+          <a href="#" class="k-searchbar-modal__result-item d-flex justify-content-between text-black text-decoration-none">
+            <span class="k-searchbar__item-text pr-2">Маркировка обуви</span>
+            <span class="k-searchbar__item-price">8400₽</span>
+          </a>
+          <a href="#" class="k-searchbar-modal__result-item d-flex justify-content-between text-black text-decoration-none">
+            <span class="k-searchbar__item-text pr-2">Маркировка обуви</span>
+            <span class="k-searchbar__item-price">8400₽</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="k-modal k-menu-modal modal fade" id="mobileMenuModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <button
+            type="button"
+            class="k-modal__btn-close btn position-absolute p-0 border-0"
+            data-dismiss="modal"
+            aria-label="Закрыть меню"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        <div class="modal-body d-flex flex-column align-items-center px-4 py-5 text-center">
+          <div class="k-menu-modal__text d-flex flex-column align-items-center mb-4 pb-4 border-bottom border-primary">
+            <span class="font-weight-bold">9:00 - 20:00 Ежедневно</span>
+            <span class="mb-4">Техподдержка</span>
+            <span class="font-weight-bold">+7 (495) 106-68-82</span>
+            <span>+7 (495) 128-78-66</span>
+          </div>
+          <nav class="mb-4">
+            <ul class="k-menu-modal__list mb-0 k-heading-font text-uppercase list-unstyled">
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/">Программное обеспечение</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/">Автоматизация</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/products.html">Оборудование</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/services.html">Услуги</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/payment-delivery.html">Оплата и настройка</a></li>
+              <li><a class="text-black text-decoration-none" href="/contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="btn btn-primary">Заказать обратный звонок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/localization/messages_ru.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+  <script src="./js/ppage.min.js"></script>
+</body>
+</html>
