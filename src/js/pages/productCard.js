@@ -1,5 +1,6 @@
 import {BasePage} from "./basePage";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
+import {QuantityInput} from "../components/quantityInput";
 
 const discountPriceClass = "k-discount-section--discount-prices";
 
@@ -7,9 +8,11 @@ export class ProductCardPage extends BasePage {
   constructor() {
     super();
 
-    this.$quantityInput = $(".js-product-quantity");
-    this.$quantityMinusBtn = $(".js-quantity-minus");
-    this.$quantityPlusBtn = $(".js-quantity-plus");
+    const quantityInput = new QuantityInput(
+      ".js-product-quantity",
+      ".js-quantity-minus",
+      ".js-quantity-plus"
+    );
 
     this.$sectionEl = $(".js-discount-section");
     this.$serviceCheckboxes = $(".js-service-checkbox");
@@ -21,12 +24,6 @@ export class ProductCardPage extends BasePage {
     this.productPrice = parseInt($(".js-product-price").text().split(" ").join(""));
     this.discountActive = true;
 
-    this.$quantityMinusBtn.on("click", (e) => {
-      if (this.$quantityInput.val() > 1) {
-        this.$quantityInput.val(+this.$quantityInput.val() - 1)
-      }
-    });
-    this.$quantityPlusBtn.on("click", () => this.$quantityInput.val(+this.$quantityInput.val() + 1));
     this.$serviceCheckboxes.on("change", (e) => this.onCheckboxChange(e));
 
     this.initImagesSlider();

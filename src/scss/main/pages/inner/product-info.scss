@@ -28,11 +28,6 @@
   & form .btn {
     height: 70px;
   }
-
-  & .form-control:disabled,
-  & .form-control[readonly] {
-    background-color: #fff;
-  }
 }
 
 .k-product-info__main-img {
@@ -70,32 +65,9 @@
   font-size: 40px;
 }
 
-.k-product-info__quantity-btn {
-  position: absolute;
-  top: 0;
-  width: 30px;
-  height: 100%;
-  padding: 0;
-}
-
-.k-product-info__quantity-btn--minus {
-  left: 0;
-}
-
-.k-product-info__quantity-btn--plus {
-  right: 0;
-}
 
 .k-product-info__link {
   color: rgba(0, 0, 0, 0.56);
-}
-
-.k-product-info__quantity-input {
-  width: 140px;
-  height: 70px;
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: center;
 }
 
 @include media-breakpoint-up(xs) {

@@ -13,6 +13,10 @@
     content: "";
     pointer-events: none;
   }
+
+  & .container {
+    position: relative;
+  }
 }
 
 .k-inner-intro-section--services {
@@ -21,6 +25,10 @@
 
 .k-inner-intro-section--delivery {
   background-image: img-url("inner/delivery/bg_mobile.jpg");
+}
+
+.k-inner-intro-section--cart {
+  background-image: img-url("inner/cart/bg_mobile.jpg");
 }
 
 .k-inner-intro-section--contacts {
@@ -64,6 +72,10 @@
 
   .k-inner-intro-section--delivery {
     background-image: img-url("inner/delivery/bg.jpg");
+  }
+
+  .k-inner-intro-section--cart {
+    background-image: img-url("inner/cart/bg.jpg");
   }
 
   .k-inner-intro-section--contacts {

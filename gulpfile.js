@@ -54,7 +54,8 @@ const scripts = () => {
       entry: {
         index: `./${jsFolderPath}/target.indexPage.js`,
         ppage: `./${jsFolderPath}/target.productsPage.js`,
-        pcard: `./${jsFolderPath}/target.productCard.js`
+        pcard: `./${jsFolderPath}/target.productCard.js`,
+        cart: `./${jsFolderPath}/target.cartPage.js`
       },
       output: {
         filename: '[name].min.js'
