@@ -1,0 +1,55 @@
+.k-faq__content {
+  max-width: 1426px;
+}
+
+.k-faq__title {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.k-faq__item-num {
+  height: 80px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.k-faq__item-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+
+  &::before {
+    width: 16px;
+    height: 16px;
+    font-size: 24px;
+    content: "-";
+  }
+
+  &.collapsed {
+    &::before {
+      content: "+";
+    }
+  }
+}
+
+.k-faq__item-content {
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.k-faq__item-title {
+  font-weight: 700;
+}
+
+@include media-breakpoint-up(xl) {
+  .k-faq__item-num {
+    width: 140px;
+    height: auto;
+  }
+
+  .k-faq__item-btn {
+    position: static;
+  }
+}

@@ -1,0 +1,44 @@
+.k-team-section {
+  overflow: hidden;
+
+  & .k-section__btn {
+    width: 100%;
+    max-width: 325px;
+  }
+}
+
+.k-team-section__title {
+  font-size: 40px;
+  font-family: Gilroy, sans-serif;
+}
+
+.k-team-section__subtitle {
+  font-size: 20px;
+}
+
+.k-team-section__text {
+  font-size: 18px;
+}
+
+.k-team-section__photo {
+  width: 100%;
+  max-width: 325px;
+}
+
+.k-team-section__name {
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.k-team-section__role {
+  font-size: 18px;
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-team-section {
+    & .swiper-slide {
+      width: calc(100% / 5) !important;
+      margin-right: 0 !important;
+    }
+  }
+}

@@ -30,11 +30,13 @@
     position: static !important;
     width: auto !important;
     flex-wrap: wrap;
+    transform: none !important;
   }
 
   & .swiper-pagination-bullet  {
     width: 16px;
     height: 16px;
+    margin: 0 4px 4px !important;
     background-color: transparent;
     border: 2px solid $black;
     opacity: 1;
@@ -43,6 +45,21 @@
   & .swiper-pagination-bullet-active {
     background-color: #f7ad5c;
     border: 1px solid #ebebeb;
+  }
+}
+
+.k-slider--disabled {
+  &::before,
+  &::after {
+    display: none !important;
+  }
+
+  & .swiper-pagination {
+    display: none !important;
+  }
+
+  & .k-slider__btn {
+    display: none !important;
   }
 }
 

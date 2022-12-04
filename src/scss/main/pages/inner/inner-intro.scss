@@ -49,6 +49,22 @@
   }
 }
 
+.k-inner-intro-section--blog {
+  background-image: img-url("inner/blog/bg_mobile.jpg");
+}
+
+.k-inner-intro-section--faq {
+  background-image: img-url("inner/faq/bg_mobile.jpg");
+}
+
+.k-inner-intro-section--law {
+  background-image: img-url("inner/law/bg_mobile.jpg");
+}
+
+.k-inner-intro-section--company {
+  background-image: img-url("inner/company/bg_mobile.jpg");
+}
+
 @include media-breakpoint-up(sm) {
   .k-inner-intro-section {
     height: 480px;
@@ -85,6 +101,22 @@
       height: 30%;
       opacity: 1;
     }
+  }
+
+  .k-inner-intro-section--blog {
+    background-image: img-url("inner/blog/bg.jpg");
+  }
+
+  .k-inner-intro-section--faq {
+    background-image: img-url("inner/faq/bg.jpg");
+  }
+
+  .k-inner-intro-section--law {
+    background-image: img-url("inner/law/bg.jpg");
+  }
+
+  .k-inner-intro-section--company {
+    background-image: img-url("inner/company/bg.jpg");
   }
 }
 

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <title>Все-кассы</title>
+</head>
+<body>
+  <div class="d-flex flex-column justify-content-between">
+    <header class="k-logo-block k-logo-block--header js-header">
+      <div class="py-3 border-bottom">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center">
+              <a class="d-inline-block" href="/">
+                <img class="k-logo-block__logo flex-shrink-0" src="./img/logo.svg" width="188" height="57" alt="Логотип компании Все-кассы">
+              </a>
+              <span class="k-logo-block__text d-none d-xl-block ml-xl-3">20 лет занимаемся автоматизацией торговли и ресторанов</span>
+            </div>
+            <div class="d-flex align-items-center ml-auto">
+              <div class="k-logo-block__info d-none d-lg-flex">
+                <div class="mr-3 mr-xxl-4">
+                  <span class="d-block font-weight-bold">9:00 - 20:00 Ежедневно</span>
+                  <span>Техподдержка</span>
+                </div>
+                <div>
+                  <a href="tel:74951066882" class="d-block text-black font-weight-bold">+7 (495) 106-68-82</a>
+                  <a href="tel:74951287866" class="text-black">+7 (495) 128-78-66</a>
+                </div>
+              </div>
+
+              <a href="#" class="k-logo-block__btn-circle icon-message btn mr-xl-1"></a>
+              <button data-toggle="modal" data-target="#searchModal" class="k-logo-block__btn-circle icon-search btn mr-xl-1"></button>
+              <a href="#" class="k-logo-block__btn-circle icon-cart btn position-relative mr-2 mr-xl-3">
+                <span class="k-logo-block__cart-num d-block bg-primary rounded-pill">12</span>
+              </a>
+
+              <button class="k-logo-block__btn-call btn btn-primary d-none d-sm-block">Заказать обратный звонок</button>
+              <button
+                class="k-logo-block__btn-circle k-logo-block__btn-circle--menu icon-menu btn btn-primary d-lg-none ml-2"
+                data-toggle="modal" data-target="#mobileMenuModal"
+              >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="k-site-menu d-none d-lg-block pt-4">
+        <nav class="container">
+          <ul class="d-flex justify-content-between mb-0 text-center list-unstyled user-select-none">
+            <li><a class="k-heading-font text-black" href="/">Программное обеспечение</a></li>
+            <li class="k-site-menu__item-w-submenu d-flex position-relative">
+              <div class="position-relative d-flex align-items-center">
+                <a class="k-heading-font text-black" href="/">Автоматизация</a>
+                <span class="k-site-menu__submenu-arrow d-inline-flex d-xl-none rounded ml-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="k-site-menu__submenu bg-transparent">
+                <div class="k-site-menu__submenu-content px-4 py-3">
+                  <ul class="list-unstyled text-left">
+                    <li class="mb-3">
+                      <a class="k-heading-font text-black" href="/index-shop.html">Автоматизация продуктового магазина</a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="k-heading-font text-black" href="/index-1c.html">Автоматизация 1с</a>
+                    </li>
+                    <li>
+                      <a class="k-heading-font text-black" href="/index-restaurant.html">Автоматизация ресторана</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a class="k-heading-font text-black" href="/products.html">Оборудование</a></li>
+            <li><a class="k-heading-font text-black" href="/services.html">Услуги</a></li>
+            <li><a class="k-heading-font text-black" href="/payment-delivery.html">Оплата и доставка</a></li>
+            <li><a class="k-heading-font text-black" href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="d-flex flex-column justify-content-between">
+      <section class="k-section k-section--bg k-inner-intro-section k-inner-intro-section--law">
+        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+          <div class="container">
+            <h2 class="k-section__title k-inner-intro-section__title mb-3 mx-auto text-white text-center">Закон</h2>
+          </div>
+        </div>
+      </section>
+      <div class="k-blog k-tabs py-5">
+        <div class="container">
+          <nav class="nav nav-tabs d-flex flex-column flex-lg-row justify-content-between p-4 border-0">
+            <a class="nav-link btn btn-outline-light active mb-4 mb-lg-0" href="/blog.html">Блог</a>
+            <a class="nav-link btn btn-outline-light mb-4 mb-lg-0" href="/faq.html">Вопросы и ответы</a>
+            <a class="nav-link btn btn-outline-light">Закон</a>
+          </nav>
+          <div class="k-law__content mx-auto font-weight-bold mb-5 pt-5">
+            <span class="k-law__title d-block mb-5">Ключевые документы</span>
+            <div class="k-law__documents d-flex flex-column mx-auto mb-5">
+              <span class="k-law__document">
+                <a class="text-black" href="">Федеральный закон 54-ФЗ “О ПРИМЕНЕНИИ КОНТРОЛЬНО-КАССОВОЙ ТЕХНИКИ”</a> Формат электронного чека.
+                <a class="text-black" href="">Приказ от 21 марта 2017 г. N ММВ-7-20/229</a>
+              </span>
+            </div>
+            <span class="k-law__title d-block mb-5">Разъяснения ФНС и Минфина России</span>
+            <span class="k-law__category-title d-block mx-auto mb-4 text-primary">Ответственность</span>
+            <div class="k-law__documents d-flex flex-column mx-auto">
+              <span class="k-law__document mb-4">
+                Об осуществлении расчетов без применения ККТ при выполнении работ, оказании услуг населению.
+                <a class="text-black" href="#">(Письмо Минфина России от 28.09.2017 N 03-01-15/63178)</a>
+              </span>
+              <span class="k-law__document mb-4">
+                Об осуществлении расчетов без применения ККТ.
+                <a class="text-black" href="#">(Письмо Минфина России от 04.09.2017 N 03-01-15/56672)</a>
+              </span>
+              <span class="k-law__document mb-4">
+                Об отдельных вопросах, связанных с применением ККТ.
+                <a class="text-black" href="#">(Письмо Минфина России от 25.08.2017 N 03-01-15/54865)</a>
+              </span>
+              <span class="k-law__document mb-4">
+                Об административной ответственности при применении ККТ, не соответствующей требованиям законодательства.
+                <a class="text-black" href="#">(Письмо Минфина России от 21.08.2017 N 03-01-15/53492)</a>
+              </span>
+              <span class="k-law__document mb-4">
+                О применении ККТ при осуществлении деятельности в сети Интернет и административной ответственности за неприменение ККТ.
+                <a class="text-black" href="#">(Письмо Минфина России от 04.08.2017 N 03-01-15/49942)</a>
+              </span>
+              <span class="k-law__document mb-4">
+                Об административной ответственности за неприменение ККТ с фискальным накопителем.
+                <a class="text-black" href="#">(Письмо Минфина России от 04.08.2017 N 03-01-15/49938)</a>
+              </span>
+            </div>
+          </div>
+          <div class="k-pagination d-flex flex-wrap justify-content-center">
+            <a class="k-pagination__item text-decoration-none" href="#">1</a>
+            <a class="k-pagination__item k-pagination__item--active text-decoration-none" href="#">2</a>
+            <a class="k-pagination__item text-decoration-none" href="#">3</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="k-logo-block k-logo-block--footer">
+      <div class="py-3">
+        <div class="container">
+          <div class="d-flex flex-column flex-xs-row align-items-start align-items-xs-center">
+            <div class="d-flex align-items-center mb-3 mb-xs-0">
+              <a class="d-inline-block" href="/">
+                <img class="k-logo-block__logo flex-shrink-0" src="./img/logo.svg" width="188" height="57" alt="Логотип компании Все-кассы">
+              </a>
+              <span class="k-logo-block__text d-none d-xl-block ml-xl-3">20 лет занимаемся автоматизацией торговли и ресторанов</span>
+            </div>
+            <div class="d-flex align-items-center ml-xs-auto">
+              <div class="k-logo-block__info d-none d-lg-flex">
+                <div class="mr-3 mr-xxl-4">
+                  <span class="d-block font-weight-bold">9:00 - 20:00 Ежедневно</span>
+                  <span>Техподдержка</span>
+                </div>
+                <div>
+                  <a href="tel:74951066882" class="d-block text-black font-weight-bold">+7 (495) 106-68-82</a>
+                  <a href="tel:74951287866" class="text-black">+7 (495) 128-78-66</a>
+                </div>
+              </div>
+              <button class="k-logo-block__btn-call btn btn-primary">Заказать обратный звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="k-modal k-searchbar-modal modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="">
+          <div class="form-group position-relative mb-0">
+            <label class="d-none" for="searchFormInput"></label>
+            <svg class="k-searchbar-modal__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <input
+              id="searchFormInput"
+              type="text"
+              name="search-value"
+              class="form-control"
+              placeholder="Введите ключевые слова для поиска"
+              minlength="2"
+            >
+            <div class="k-searchbar-content__loader"></div>
+          </div>
+        </form>
+        <div class="k-searchbar-modal__result-list">
+          <span class="k-searchbar-modal__result-item k-searchbar-modal__result-item--empty d-block text-center">
+            Ничего не найдено
+          </span>
+          <a href="#" class="k-searchbar-modal__result-item d-flex justify-content-between text-black text-decoration-none">
+            <span class="k-searchbar__item-text pr-2">Маркировка обуви</span>
+            <span class="k-searchbar__item-price">8400₽</span>
+          </a>
+          <a href="#" class="k-searchbar-modal__result-item d-flex justify-content-between text-black text-decoration-none">
+            <span class="k-searchbar__item-text pr-2">Маркировка обуви</span>
+            <span class="k-searchbar__item-price">8400₽</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="k-modal k-menu-modal modal fade" id="mobileMenuModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <button
+            type="button"
+            class="k-modal__btn-close btn position-absolute p-0 border-0"
+            data-dismiss="modal"
+            aria-label="Закрыть меню"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        <div class="modal-body d-flex flex-column align-items-center px-4 py-5 text-center">
+          <div class="k-menu-modal__text d-flex flex-column align-items-center mb-4 pb-4 border-bottom border-primary">
+            <span class="font-weight-bold">9:00 - 20:00 Ежедневно</span>
+            <span class="mb-4">Техподдержка</span>
+            <span class="font-weight-bold">+7 (495) 106-68-82</span>
+            <span>+7 (495) 128-78-66</span>
+          </div>
+          <nav class="mb-4">
+            <ul class="k-menu-modal__list mb-0 k-heading-font text-uppercase list-unstyled">
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/">Программное обеспечение</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/">Автоматизация</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/products.html">Оборудование</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/services.html">Услуги</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/payment-delivery.html">Оплата и настройка</a></li>
+              <li><a class="text-black text-decoration-none" href="/contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="btn btn-primary">Заказать обратный звонок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/localization/messages_ru.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+  <script src="./js/main.min.js"></script>
+</body>
+</html>

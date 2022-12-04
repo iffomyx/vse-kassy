@@ -1,0 +1,22 @@
+.k-tabs {
+  & .nav-tabs {
+    margin-bottom: 60px;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: $base-box-shadow;
+  }
+
+  & .nav-link {
+    padding: 20px 10px;
+    text-decoration: none;
+    border: 2px solid #c9d3d7;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .k-tabs {
+    & .nav-link {
+      width: calc(33.33% - 10px);
+    }
+  }
+}

@@ -621,7 +621,7 @@
             <p class="k-text mx-auto mb-4">
               Запишись на онлайн-демонстрацию уже сегодня, и научись правильно работать со своей кассой ещё до покупки
             </p>
-            <button class="k-section__btn btn btn-primary">Записаться на демонстрацию</button>
+            <button class="k-section__btn btn btn-primary" data-toggle="modal" data-target="#demonstrationModal">Записаться на демонстрацию</button>
           </div>
         </div>
       </section>
@@ -1218,12 +1218,76 @@
     </div>
   </div>
 
+  <div class="k-modal modal fade" id="demonstrationModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button
+          type="button"
+          class="k-modal__btn-close btn position-absolute p-0 border-0"
+          data-dismiss="modal"
+          aria-label="Закрыть меню"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="modal-body d-flex flex-column align-items-center p-4 px-xs-5 py-5 text-center">
+          <span class="k-modal__title mb-4 text-center font-weight-bold">Записаться на онлайн-демонстрацию кассовых аппаратов</span>
+          <form id="demonstrationModalForm" action="" class="k-solutions-section__form k-form mx-auto js-form-validation">
+            <div class="row mb-3">
+              <div class="col-12 mb-gutter-width">
+                <div class="k-form__form-group form-group mb-0 text-left js-form-group">
+                  <label class="d-none" for="demonstrationModalFormName"></label>
+                  <input
+                    id="demonstrationModalFormName"
+                    type="text"
+                    name="name"
+                    class="form-control js-name-input"
+                    placeholder="Имя"
+                    required
+                  >
+                </div>
+              </div>
+              <div class="col-12 mb-gutter-width">
+                <div class="k-form__form-group form-group mb-0 text-left js-form-group">
+                  <label class="d-none" for="demonstrationModalFormPhone"></label>
+                  <input
+                    id="demonstrationModalFormPhone"
+                    type="tel"
+                    name="phone"
+                    class="form-control js-phone-input"
+                    placeholder="+7 (000) 000 00 00"
+                    required
+                  >
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="k-section__btn btn btn-primary w-100" type="submit">
+                  Оставить заявку
+                </button>
+              </div>
+            </div>
+            <div class="k-form__form-group k-form__form-group--checkbox d-flex flex-column js-form-group">
+              <label class="k-check align-items-start mr-lg-auto" for="demonstrationModalFormTerms">
+                <input class="k-check__input" id="demonstrationModalFormTerms" name="terms" type="checkbox" required>
+                <span class="k-check__mark"></span>
+                <span class="k-check__text">
+                Отправляя форму вы принимаете условия обработки <a href="#" target="_blank">персональных данных</a>.
+              </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/localization/messages_ru.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-  <script src="./js/index.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 </html>

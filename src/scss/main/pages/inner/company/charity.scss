@@ -1,0 +1,34 @@
+.k-charity-section {
+  background-image: img-url("inner/charity/bg_mobile.jpg");
+
+  & .k-section__bg-content {
+    max-width: 850px;
+  }
+}
+
+.k-charity-section__content {
+  padding-right: 65px;
+  padding-left: 65px;
+}
+
+.k-charity-section__img {
+  max-width: 240px;
+}
+
+@include media-breakpoint-up(lg) {
+  .k-charity-section {
+    background-image: img-url("inner/charity/bg.jpg");
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .k-charity-section {
+    & .k-section__bg-content {
+      padding: 0 75px;
+    }
+  }
+
+  .k-charity-section__content {
+    padding: 0;
+  }
+}

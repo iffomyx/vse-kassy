@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <title>Все-кассы</title>
+</head>
+<body>
+  <div class="d-flex flex-column justify-content-between">
+    <header class="k-logo-block k-logo-block--header js-header">
+      <div class="py-3 border-bottom">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center">
+              <a class="d-inline-block" href="/">
+                <img class="k-logo-block__logo flex-shrink-0" src="./img/logo.svg" width="188" height="57" alt="Логотип компании Все-кассы">
+              </a>
+              <span class="k-logo-block__text d-none d-xl-block ml-xl-3">20 лет занимаемся автоматизацией торговли и ресторанов</span>
+            </div>
+            <div class="d-flex align-items-center ml-auto">
+              <div class="k-logo-block__info d-none d-lg-flex">
+                <div class="mr-3 mr-xxl-4">
+                  <span class="d-block font-weight-bold">9:00 - 20:00 Ежедневно</span>
+                  <span>Техподдержка</span>
+                </div>
+                <div>
+                  <a href="tel:74951066882" class="d-block text-black font-weight-bold">+7 (495) 106-68-82</a>
+                  <a href="tel:74951287866" class="text-black">+7 (495) 128-78-66</a>
+                </div>
+              </div>
+
+              <a href="#" class="k-logo-block__btn-circle icon-message btn mr-xl-1"></a>
+              <button data-toggle="modal" data-target="#searchModal" class="k-logo-block__btn-circle icon-search btn mr-xl-1"></button>
+              <a href="#" class="k-logo-block__btn-circle icon-cart btn position-relative mr-2 mr-xl-3">
+                <span class="k-logo-block__cart-num d-block bg-primary rounded-pill">12</span>
+              </a>
+
+              <button class="k-logo-block__btn-call btn btn-primary d-none d-sm-block">Заказать обратный звонок</button>
+              <button
+                class="k-logo-block__btn-circle k-logo-block__btn-circle--menu icon-menu btn btn-primary d-lg-none ml-2"
+                data-toggle="modal" data-target="#mobileMenuModal"
+              >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="k-site-menu d-none d-lg-block pt-4">
+        <nav class="container">
+          <ul class="d-flex justify-content-between mb-0 text-center list-unstyled user-select-none">
+            <li><a class="k-heading-font text-black" href="/">Программное обеспечение</a></li>
+            <li class="k-site-menu__item-w-submenu d-flex position-relative">
+              <div class="position-relative d-flex align-items-center">
+                <a class="k-heading-font text-black" href="/">Автоматизация</a>
+                <span class="k-site-menu__submenu-arrow d-inline-flex d-xl-none rounded ml-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="k-site-menu__submenu bg-transparent">
+                <div class="k-site-menu__submenu-content px-4 py-3">
+                  <ul class="list-unstyled text-left">
+                    <li class="mb-3">
+                      <a class="k-heading-font text-black" href="/index-shop.html">Автоматизация продуктового магазина</a>
+                    </li>
+                    <li class="mb-3">
+                      <a class="k-heading-font text-black" href="/index-1c.html">Автоматизация 1с</a>
+                    </li>
+                    <li>
+                      <a class="k-heading-font text-black" href="/index-restaurant.html">Автоматизация ресторана</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a class="k-heading-font text-black" href="/products.html">Оборудование</a></li>
+            <li><a class="k-heading-font text-black" href="/services.html">Услуги</a></li>
+            <li><a class="k-heading-font text-black" href="/payment-delivery.html">Оплата и доставка</a></li>
+            <li><a class="k-heading-font text-black" href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="d-flex flex-column justify-content-between">
+      <section class="k-section k-section--bg k-inner-intro-section k-inner-intro-section--company">
+        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+          <div class="container">
+            <h2 class="k-section__title k-inner-intro-section__title mb-3 mx-auto text-white text-center">О компании</h2>
+          </div>
+        </div>
+      </section>
+      <section class="k-section k-team-section pb-0">
+        <div class="container">
+          <div class="text-center mb-5 pb-5 border-bottom">
+            <h2 class="k-team-section__title mb-4">Компания «Все-Кассы.ру» основана в 2007 году в Москве</h2>
+            <p class="k-team-section__subtitle k-text">С самого начала, мы стремились создавать точку роста для бизнеса при помощи квалифицированных специалистов.В нашей команде лучшие менеджеры, которые подберут оборудования под задачи любой сложности.Технические специалисты имеют большой опыт в настройке и ремонте кассовой техники.Руководители нашей компании выбирают политику ориентированную на клиента.Мы настроены на долгое дружеское содружество с нашими покупателями.</p>
+          </div>
+          <h2 class="k-section__title mx-auto mb-4 text-center">Наша суперкоманда</h2>
+          <p class="k-team-section__text text-center mb-5">Наша команда состоит из самых крутых специалистов, которые помогут вам решить любой вопрос в мире онлайн-касс</p>
+          <div class="k-slider k-slider--section position-relative js-team-slider">
+            <div id="teamSlider" class="k-slider__main swiper">
+              <div class="swiper-wrapper d-xxl-flex justify-content-xxl-between flex-xxl-wrap p-0 mb-5 mb-xxl-0">
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/ernest.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Эрнест Колесников</span>
+                    <span class="k-team-section__role">Генеральный директор</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/aleksey.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Алексей Шведов</span>
+                    <span class="k-team-section__role">Директор по развитию</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/pavel.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Павел Новиков</span>
+                    <span class="k-team-section__role">Руководитель технической службы</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/sergey.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Сергей Косьянов</span>
+                    <span class="k-team-section__role">Директор по закупкам</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/anastasia.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Анастасия Мирохина</span>
+                    <span class="k-team-section__role">Маркетолог</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/yulia.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Юлия Овчинникова</span>
+                    <span class="k-team-section__role">Менеджер</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/evgeniy.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Евгений Боковой</span>
+                    <span class="k-team-section__role">Менеджер</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/svetlana.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Светлана Кузнецова</span>
+                    <span class="k-team-section__role">Менеджер</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/oleg.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Гладких Олег</span>
+                    <span class="k-team-section__role">Инженер</span>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-xxl-5">
+                  <div class="d-flex flex-column text-center">
+                    <img class="k-team-section__photo mx-auto mb-4 img-fluid rounded-circle" src="./img/team/ildar.jpg" alt="">
+                    <span class="k-team-section__name mb-2 font-weight-bold">Ильдар Мирохин</span>
+                    <span class="k-team-section__role">Инженер</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center mb-5">
+              <button id="teamSliderPrev" class="k-slider__btn k-slider__btn--prev flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 13.1284L13.1284 19.6925M13.1284 19.6925L19.6925 26.2566M13.1284 19.6925H26.2566M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div id="teamSliderPagination" class="swiper-pagination d-flex justify-content-center mx-4"></div>
+              <button id="teamSliderNext" class="k-slider__btn k-slider__btn--next flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 26.2566L26.2566 19.6925M26.2566 19.6925L19.6925 13.1284M26.2566 19.6925H13.1284M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="k-section__btn btn btn-primary">Хочу в команду!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="k-section k-certificates-section pb-0">
+        <div class="container">
+          <h2 class="k-section__title text-center mx-auto">Сертификаты поставщиков и партнёров</h2>
+          <div class="k-slider k-slider--section position-relative">
+            <div id="certificatesSlider" class="k-slider__main swiper">
+              <div class="swiper-wrapper d-flex align-items-stretch">
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/1.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/1.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/2.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/3.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/3.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/3.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/3.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/4.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/4.jpg" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide k-item px-4 py-5">
+                  <a href="./img/certificates/4.jpg" data-pswp-width="360" data-pswp-height="460" target="_blank">
+                    <img class="img-fluid w-100" src="./img/certificates/4.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <button id="certificatesSliderPrev" class="k-slider__btn k-slider__btn--prev flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 13.1284L13.1284 19.6925M13.1284 19.6925L19.6925 26.2566M13.1284 19.6925H26.2566M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div id="certificatesSliderPagination" class="swiper-pagination d-flex justify-content-center mx-4"></div>
+              <button id="certificatesSliderNext" class="k-slider__btn k-slider__btn--next flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 26.2566L26.2566 19.6925M26.2566 19.6925L19.6925 13.1284M26.2566 19.6925H13.1284M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="k-section k-conference-section">
+        <div class="container">
+          <h2 class="k-section__title mx-auto mb-4 text-center">Проводим собственные конференции</h2>
+          <p class="k-conference-section__text mb-4 text-center">Компания Все-кассы.ру регулярно проводит собственные конференции и владеет экспертизой высокого уровня.</p>
+          <div class="embed-responsive embed-responsive-16by9 mb-5">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/pUsFcquosHQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="k-conference-section__video-text k-text text-center">Наша компания на протяжении 12 лет развивается в направление продаже кассовой техники и автоматизации торговли.Мы активно участвуем в профильных семинарах и выставках для бухгалтеров и предпринимателей.</p>
+          <h2 class="k-section__title mx-auto mb-5 text-center">Мы на конференциях</h2>
+          <div class="k-conference-section__slider k-slider k-slider--section position-relative js-conference-slider">
+            <div id="conferenceSlider" class="k-slider__main swiper">
+              <div class="swiper-wrapper d-xxl-flex justify-content-xxl-between flex-xxl-wrap">
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/7.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/8.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/9.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/10.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/11.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid w-100" src="./img/conference/12.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <button id="conferenceSliderPrev" class="k-slider__btn k-slider__btn--prev flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 13.1284L13.1284 19.6925M13.1284 19.6925L19.6925 26.2566M13.1284 19.6925H26.2566M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div id="conferenceSliderPagination" class="swiper-pagination d-flex justify-content-center mx-4"></div>
+              <button id="conferenceSliderNext" class="k-slider__btn k-slider__btn--next flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 26.2566L26.2566 19.6925M26.2566 19.6925L19.6925 13.1284M26.2566 19.6925H13.1284M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="k-section k-section--bg k-charity-section">
+        <div class="container">
+          <div class="k-section__bg-content d-xl-flex align-items-xl-center mx-auto text-center text-xl-left py-5 py-xl-4">
+            <div class="k-charity-section__content mr-xl-5">
+              <h2 class="k-section__title mb-3">На благое дело</h2>
+              <p class="k-choice-section__main-text k-text mb-4">10 % с прибыли перечисляем в детский приют “ПОКРОВ”. Православный детский центр “ПОКРОВ” – это большая семья. Где под одной крышей собрались дети из разных уголков России. Сотрудники Все-Кассы.ру принимают участие в жизни приюта. Приезжаем, общаемся, помогаем как можем.</p>
+              <span class="k-charity-section__help-text k-text d-block mb-4 mb-xl-0 font-weight-bold">Помочь детской обители можно на сайте.</span>
+            </div>
+            <img class="k-charity-section__img mx-auto img-fluid" src="./img/inner/charity/letter.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="k-section k-reviews-section">
+        <div class="container">
+          <h2 class="k-section__title mb-5 mx-auto text-center">Что говорят клиенты о <span class="text-primary">все-кассы.ру</span> на яндекс-маркете</h2>
+          <div class="d-flex justify-content-center">
+            <div class="d-flex align-items-center mx-auto">
+              <img class="mr-4" src="./img/logos/ya-market.png" alt="Логотип Яндекс Маркет">
+              <div class="d-flex flex-column">
+                <span class="k-reviews-section__rating">5.0</span>
+                <span class="k-text mb-4">Рейтинг за 3 месяца</span>
+                <svg width="140" height="24" viewBox="0 0 140 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8647 2.99616C12.4794 2.33201 11.5203 2.33201 11.1349 2.99616L8.42083 7.67347C8.23045 8.00155 7.90141 8.22544 7.52634 8.28209L2.44003 9.05032C1.58575 9.17935 1.28609 10.258 1.95139 10.8092L5.74048 13.9484C6.09123 14.239 6.25615 14.6973 6.17094 15.1448L5.17978 20.3499C5.02309 21.1727 5.88688 21.812 6.62803 21.4218L11.4174 18.9C11.782 18.708 12.2177 18.708 12.5822 18.9L17.3716 21.4218C18.1128 21.812 18.9765 21.1727 18.8199 20.3499L17.8287 15.1448C17.7435 14.6973 17.9084 14.239 18.2591 13.9484L22.0482 10.8092C22.7135 10.258 22.4139 9.17935 21.5596 9.05032L16.4733 8.28209C16.0982 8.22544 15.7692 8.00155 15.5788 7.67347L12.8647 2.99616Z" fill="#F7AD5C"/>
+                  <path d="M41.8647 2.99616C41.4794 2.33201 40.5203 2.33201 40.1349 2.99616L37.4208 7.67347C37.2305 8.00155 36.9014 8.22544 36.5263 8.28209L31.44 9.05032C30.5857 9.17935 30.2861 10.258 30.9514 10.8092L34.7405 13.9484C35.0912 14.239 35.2561 14.6973 35.1709 15.1448L34.1798 20.3499C34.0231 21.1727 34.8869 21.812 35.628 21.4218L40.4174 18.9C40.782 18.708 41.2177 18.708 41.5822 18.9L46.3716 21.4218C47.1128 21.812 47.9765 21.1727 47.8199 20.3499L46.8287 15.1448C46.7435 14.6973 46.9084 14.239 47.2591 13.9484L51.0482 10.8092C51.7135 10.258 51.4139 9.17935 50.5596 9.05032L45.4733 8.28209C45.0982 8.22544 44.7692 8.00155 44.5788 7.67347L41.8647 2.99616Z" fill="#F7AD5C"/>
+                  <path d="M70.8647 2.99616C70.4794 2.33201 69.5203 2.33201 69.1349 2.99616L66.4208 7.67347C66.2305 8.00155 65.9014 8.22544 65.5263 8.28209L60.44 9.05032C59.5857 9.17935 59.2861 10.258 59.9514 10.8092L63.7405 13.9484C64.0912 14.239 64.2561 14.6973 64.1709 15.1448L63.1798 20.3499C63.0231 21.1727 63.8869 21.812 64.628 21.4218L69.4174 18.9C69.782 18.708 70.2177 18.708 70.5822 18.9L75.3716 21.4218C76.1128 21.812 76.9765 21.1727 76.8199 20.3499L75.8287 15.1448C75.7435 14.6973 75.9084 14.239 76.2591 13.9484L80.0482 10.8092C80.7135 10.258 80.4139 9.17935 79.5596 9.05032L74.4733 8.28209C74.0982 8.22544 73.7692 8.00155 73.5788 7.67347L70.8647 2.99616Z" fill="#F7AD5C"/>
+                  <path d="M99.8647 2.99616C99.4794 2.33201 98.5203 2.33201 98.1349 2.99616L95.4208 7.67347C95.2305 8.00155 94.9014 8.22544 94.5263 8.28209L89.44 9.05032C88.5857 9.17935 88.2861 10.258 88.9514 10.8092L92.7405 13.9484C93.0912 14.239 93.2561 14.6973 93.1709 15.1448L92.1798 20.3499C92.0231 21.1727 92.8869 21.812 93.628 21.4218L98.4174 18.9C98.782 18.708 99.2177 18.708 99.5822 18.9L104.372 21.4218C105.113 21.812 105.977 21.1727 105.82 20.3499L104.829 15.1448C104.743 14.6973 104.908 14.239 105.259 13.9484L109.048 10.8092C109.714 10.258 109.414 9.17935 108.56 9.05032L103.473 8.28209C103.098 8.22544 102.769 8.00155 102.579 7.67347L99.8647 2.99616Z" fill="#F7AD5C"/>
+                  <path d="M128.865 2.99616C128.479 2.33201 127.52 2.33201 127.135 2.99616L124.421 7.67347C124.23 8.00155 123.901 8.22544 123.526 8.28209L118.44 9.05032C117.586 9.17935 117.286 10.258 117.951 10.8092L121.74 13.9484C122.091 14.239 122.256 14.6973 122.171 15.1448L121.18 20.3499C121.023 21.1727 121.887 21.812 122.628 21.4218L127.417 18.9C127.782 18.708 128.218 18.708 128.582 18.9L133.372 21.4218C134.113 21.812 134.977 21.1727 134.82 20.3499L133.829 15.1448C133.743 14.6973 133.908 14.239 134.259 13.9484L138.048 10.8092C138.714 10.258 138.414 9.17935 137.56 9.05032L132.473 8.28209C132.098 8.22544 131.769 8.00155 131.579 7.67347L128.865 2.99616Z" fill="#F7AD5C"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="k-slider k-slider--section position-relative">
+            <div id="reviewSlider" class="k-slider__main swiper">
+              <div class="swiper-wrapper">
+                <div class="k-review k-item swiper-slide">
+                  <div class="d-flex flex-column align-items-center text-center p-4">
+                    <img class="k-review__avatar mb-4 rounded-circle" src="./img/avatars/1.jpg" alt="">
+                    <span class="k-review__author mb-3">Игорь</span>
+                    <p class="k-review__text k-text">
+                      Такого внимательного подхода в работе с клиентом тяжело найти. Я отказался от работы с многими
+                      компаниями именно из-за невнимательности к моей проблеме. Юлия же помогла сделать всё ПОД КЛЮЧ без
+                      лишних проблем. Участвовала в решении моего вопроса, за что ей огромное спасибо!
+                    </p>
+                  </div>
+                </div>
+                <div class="k-review k-item swiper-slide">
+                  <div class="d-flex flex-column align-items-center text-center p-4">
+                    <img class="k-review__avatar mb-4 rounded-circle" src="./img/avatars/2.jpg" alt="">
+                    <span class="k-review__author mb-3">Ольга Кудряшова</span>
+                    <p class="k-review__text k-text">
+                      Я не знала ничего о кассах и о маркировке. Мне объяснили все нюансы об оборудовании, о программах.
+                      Я задавала миллион вопросов. Не знаю, как хватило терпения у менеджера Антона)). В итоге, после
+                      установки, разобралась со всем за пару дней. Очень довольна! Все, что необходимо для работы
+                      магазина, все прекрасно работает! И сэкономила приличные деньги. Установщик Андрей все быстро
+                      установил и объяснил на примере тестовых чеков. Поэтому у меня никаких проблем не возникло, когда
+                      сама начала работать. В общей, ребята, вы молодцы! Так держать! Удачи вам! Большое спасибо!
+                    </p>
+                  </div>
+                </div>
+                <div class="k-review k-item swiper-slide">
+                  <div class="d-flex flex-column align-items-center text-center p-4">
+                    <img class="k-review__avatar mb-4 rounded-circle" src="./img/avatars/3.jpg" alt="">
+                    <span class="k-review__author mb-3">Юля Е.</span>
+                    <p class="k-review__text k-text">
+                      Узнала о данной компании, просматривая ролики на youtube о кассах. Понравились ролики, все очень
+                      доходчиво объясняли, сравнивали разные аппараты. При покупке кассы решила обратиться в данную
+                      компанию, и не пожалела. Понравилось внимательное отношение менеджера (Овчинникова Юля, спасибо
+                      Вам!!!) на протяжении всей сделки, от подбора до отгрузки и настройке. Все было четко, оперативно,
+                      без задержек. Так же нравится, что компания не предлагает один вид кассы, а предлагает кассы под
+                      нужды вашей компании и ваших задач. Здесь я получила информацию чем отличаются другие
+                      представленные на рынке кассы.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <button id="reviewSliderPrev" class="k-slider__btn k-slider__btn--prev flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 13.1284L13.1284 19.6925M13.1284 19.6925L19.6925 26.2566M13.1284 19.6925H26.2566M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div id="reviewSliderPagination" class="swiper-pagination d-flex justify-content-center mx-4"></div>
+              <button id="reviewSliderNext" class="k-slider__btn k-slider__btn--next flex-shrink-0 btn btn-primary rounded-circle p-0">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.6925 26.2566L26.2566 19.6925M26.2566 19.6925L19.6925 13.1284M26.2566 19.6925H13.1284M36.1027 19.6925C36.1027 28.7556 28.7556 36.1027 19.6925 36.1027C10.6293 36.1027 3.28223 28.7556 3.28223 19.6925C3.28223 10.6293 10.6293 3.28223 19.6925 3.28223C28.7556 3.28223 36.1027 10.6293 36.1027 19.6925Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <h2 class="k-reviews-section__form-title k-section__title mb-4 mx-auto text-center">Хочу также</h2>
+          <form class="k-reviews-section__form k-form d-flex flex-column mx-auto js-form-validation" action="">
+            <div class="d-flex align-items-start flex-column flex-lg-row mb-4">
+              <div class="k-form__form-group form-group w-100 mr-lg-4 mb-4 mb-lg-0 text-left js-form-group">
+                <label class="d-none" for="reviewsFormPhone"></label>
+                <input
+                  id="reviewsFormPhone"
+                  class="form-control js-phone-input"
+                  name="phone"
+                  type="tel"
+                  placeholder="+7 (000) 000 00 00"
+                >
+              </div>
+              <button class="k-section__btn btn btn-primary">Перезвоните мне!</button>
+            </div>
+            <div class="k-form__form-group--checkbox js-form-group">
+              <label class="k-check align-items-center mr-lg-auto" for="reviewsFormTerms">
+                <input id="reviewsFormTerms" class="k-check__input" name="terms" type="checkbox" required>
+                <span class="k-check__mark"></span>
+                <span class="k-check__text">
+                  Отправляя форму вы принимаете условия обработки <a href="#" target="_blank">персональных данных</a>.
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="k-logo-block k-logo-block--footer">
+      <div class="py-3">
+        <div class="container">
+          <div class="d-flex flex-column flex-xs-row align-items-start align-items-xs-center">
+            <div class="d-flex align-items-center mb-3 mb-xs-0">
+              <a class="d-inline-block" href="/">
+                <img class="k-logo-block__logo flex-shrink-0" src="./img/logo.svg" width="188" height="57" alt="Логотип компании Все-кассы">
+              </a>
+              <span class="k-logo-block__text d-none d-xl-block ml-xl-3">20 лет занимаемся автоматизацией торговли и ресторанов</span>
+            </div>
+            <div class="d-flex align-items-center ml-xs-auto">
+              <div class="k-logo-block__info d-none d-lg-flex">
+                <div class="mr-3 mr-xxl-4">
+                  <span class="d-block font-weight-bold">9:00 - 20:00 Ежедневно</span>
+                  <span>Техподдержка</span>
+                </div>
+                <div>
+                  <a href="tel:74951066882" class="d-block text-black font-weight-bold">+7 (495) 106-68-82</a>
+                  <a href="tel:74951287866" class="text-black">+7 (495) 128-78-66</a>
+                </div>
+              </div>
+              <button class="k-logo-block__btn-call btn btn-primary">Заказать обратный звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="k-modal k-searchbar-modal modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="">
+          <div class="form-group position-relative mb-0">
+            <label class="d-none" for="searchFormInput"></label>
+            <svg class="k-searchbar-modal__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <input
+              id="searchFormInput"
+              type="text"
+              name="search-value"
+              class="form-control"
+              placeholder="Введите ключевые слова для поиска"
+              minlength="2"
+            >
+            <div class="k-searchbar-content__loader"></div>
+          </div>
+        </form>
+        <div class="k-searchbar-modal__result-list">
+          <span class="k-searchbar-modal__result-item k-searchbar-modal__result-item--empty d-block text-center">
+            Ничего не найдено
+          </span>
+          <a href="#" class="k-searchbar-modal__result-item d-flex justify-content-between text-black text-decoration-none">
+            <span class="k-searchbar__item-text pr-2">Маркировка обуви</span>
+            <span class="k-searchbar__item-price">8400₽</span>
+          </a>
+          <a href="#" class="k-searchbar-modal__result-item d-flex justify-content-between text-black text-decoration-none">
+            <span class="k-searchbar__item-text pr-2">Маркировка обуви</span>
+            <span class="k-searchbar__item-price">8400₽</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="k-modal k-menu-modal modal fade" id="mobileMenuModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <button
+            type="button"
+            class="k-modal__btn-close btn position-absolute p-0 border-0"
+            data-dismiss="modal"
+            aria-label="Закрыть меню"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        <div class="modal-body d-flex flex-column align-items-center px-4 py-5 text-center">
+          <div class="k-menu-modal__text d-flex flex-column align-items-center mb-4 pb-4 border-bottom border-primary">
+            <span class="font-weight-bold">9:00 - 20:00 Ежедневно</span>
+            <span class="mb-4">Техподдержка</span>
+            <span class="font-weight-bold">+7 (495) 106-68-82</span>
+            <span>+7 (495) 128-78-66</span>
+          </div>
+          <nav class="mb-4">
+            <ul class="k-menu-modal__list mb-0 k-heading-font text-uppercase list-unstyled">
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/">Программное обеспечение</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/">Автоматизация</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/products.html">Оборудование</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/services.html">Услуги</a></li>
+              <li class="mb-2"><a class="text-black text-decoration-none" href="/payment-delivery.html">Оплата и настройка</a></li>
+              <li><a class="text-black text-decoration-none" href="/contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="btn btn-primary">Заказать обратный звонок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/localization/messages_ru.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+  <script src="./js/main.min.js"></script>
+</body>
+</html>

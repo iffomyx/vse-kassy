@@ -1,0 +1,35 @@
+.k-conference-section {
+  overflow: hidden;
+}
+
+.k-conference-section__video-text {
+  padding-bottom: 60px;
+}
+
+.k-conference-section__slider {
+  &.k-slider {
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    & .swiper-wrapper {
+      padding-top: 0;
+    }
+  }
+
+  & .k-slider__main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .k-conference-section__slider {
+    & .swiper-slide {
+      width: calc(100% / 4 - 12px) !important;
+      margin-right: 0 !important;
+      margin-bottom: 24px !important;
+    }
+  }
+}
