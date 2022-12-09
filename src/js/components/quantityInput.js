@@ -1,17 +1,19 @@
 export class QuantityInput {
-  constructor(inputSelector, minusBtnSelector, plusBtnSelector) {
-    this.input = $(inputSelector);
-    this.minusBtn = $(minusBtnSelector);
-    this.plusBtn = $(plusBtnSelector);
+  constructor(input, minusBtn, plusBtn) {
+    this.input = input;
+    this.minusBtn = minusBtn;
+    this.plusBtn = plusBtn;
 
-    if (this.input.length && this.minusBtn.length && this.plusBtn.length) {
-      this.minusBtn.on("click", () => {
-        if (this.input.val() > 1) {
-          this.input.attr("value", parseInt(this.input.val()) - 1);
+    if (this.input && this.minusBtn && this.plusBtn) {
+      this.minusBtn.addEventListener("click", () => {
+        if (this.input.value > 1) {
+          this.input.setAttribute("value", this.input.valueAsNumber - 1);
         }
       });
 
-      this.plusBtn.on("click", () => this.input.attr("value", parseInt(this.input.val()) + 1));
+      this.plusBtn.addEventListener("click", () => {
+        this.input.setAttribute("value", this.input.valueAsNumber + 1);
+      });
     }
   }
 }

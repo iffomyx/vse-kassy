@@ -5,10 +5,16 @@ export class CartPage extends BasePage {
   constructor() {
     super();
 
-    const quantityInput = new QuantityInput(
-      ".js-product-quantity",
-      ".js-quantity-minus",
-      ".js-quantity-plus"
-    );
+    const products = document.querySelectorAll(".k-cart-section__product");
+
+    if (products.length > 0) {
+      products.forEach((product) => {
+        const quantityInput = new QuantityInput(
+          product.querySelector(".js-product-quantity"),
+          product.querySelector(".js-quantity-minus"),
+          product.querySelector(".js-quantity-plus")
+        );
+      });
+    }
   }
 }

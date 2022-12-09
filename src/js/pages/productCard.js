@@ -9,9 +9,9 @@ export class ProductCardPage extends BasePage {
     super();
 
     const quantityInput = new QuantityInput(
-      ".js-product-quantity",
-      ".js-quantity-minus",
-      ".js-quantity-plus"
+      document.querySelector(".k-product-info__main-content .js-product-quantity"),
+      document.querySelector(".k-product-info__main-content .js-quantity-minus"),
+      document.querySelector(".k-product-info__main-content .js-quantity-plus")
     );
 
     this.$sectionEl = $(".js-discount-section");
